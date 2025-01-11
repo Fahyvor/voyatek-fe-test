@@ -1,0 +1,1322 @@
+{
+    "status": true,
+    "message": "Success",
+    "timestamp": 1736604367283,
+    "data": {
+        "hotels": [
+            {
+                "hotel_id": 4661134,
+                "accessibilityLabel": "FabExpress Embassy Suites - Nr BKC.\n3 out of 5 stars.\n6.1 Pleasant 176 reviews.\n‎Central Suburbs‬ • ‎2.2 km from downtown‬.\nEarly 2025 Deal.\n Hotel room : 1 bed.\nOriginal price 196 AED. Current price 96 AED..\n+12 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "qualityClass": 0,
+                    "countryCode": "in",
+                    "checkout": {
+                        "untilTime": "11:00",
+                        "fromTime": "00:00"
+                    },
+                    "ufi": -2092174,
+                    "blockIds": [
+                        "466113407_398325515_2_2_0"
+                    ],
+                    "isPreferred": true,
+                    "optOutFromGalleryChanges": 1,
+                    "latitude": 19.05773,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 6.1,
+                    "checkin": {
+                        "fromTime": "12:00",
+                        "untilTime": "00:00"
+                    },
+                    "longitude": 72.87041,
+                    "position": 0,
+                    "reviewScoreWord": "Pleasant",
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "taxExceptions": [],
+                        "benefitBadges": [
+                            {
+                                "identifier": "Early Year Deals",
+                                "text": "Early 2025 Deal",
+                                "explanation": "Early 2025 Deal",
+                                "variant": "constructive"
+                            }
+                        ],
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 11.5216585917067
+                        },
+                        "strikethroughPrice": {
+                            "value": 195.946797052512,
+                            "currency": "AED"
+                        },
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 96.013823743631
+                        }
+                    },
+                    "wishlistName": "Mumbai",
+                    "currency": "INR",
+                    "accuratePropertyClass": 3,
+                    "id": 4661134,
+                    "rankingPosition": 0,
+                    "checkoutDate": "2025-01-25",
+                    "reviewCount": 176,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/496544709.jpg?k=f699b11514de7ee0aaef425c6c07d89fa661382f4381f746ffcb52c327c2466c&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/496544709.jpg?k=f699b11514de7ee0aaef425c6c07d89fa661382f4381f746ffcb52c327c2466c&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/496544709.jpg?k=f699b11514de7ee0aaef425c6c07d89fa661382f4381f746ffcb52c327c2466c&o="
+                    ],
+                    "mainPhotoId": 496544709,
+                    "name": "FabExpress Embassy Suites - Nr BKC",
+                    "propertyClass": 3
+                }
+            },
+            {
+                "hotel_id": 12734278,
+                "accessibilityLabel": "FabHotel Atithi Residency I - Nr BKC.\n3 out of 5 for property rating.\n6.5 Pleasant 55 reviews.\n‎Western Suburbs‬ • ‎2.3 km from downtown‬.\nEarly 2025 Deal.\n Private room : 1 bed.\nOriginal price 173 AED. Current price 92 AED..\n+11 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "rankingPosition": 1,
+                    "id": 12734278,
+                    "wishlistName": "Mumbai",
+                    "priceBreakdown": {
+                        "strikethroughPrice": {
+                            "currency": "AED",
+                            "value": 173.472676761302
+                        },
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 11.0328522541519
+                        },
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 91.9404375062941
+                        },
+                        "taxExceptions": [],
+                        "benefitBadges": [
+                            {
+                                "text": "Early 2025 Deal",
+                                "identifier": "Early Year Deals",
+                                "explanation": "Early 2025 Deal",
+                                "variant": "constructive"
+                            }
+                        ]
+                    },
+                    "isFirstPage": true,
+                    "isPreferredPlus": true,
+                    "accuratePropertyClass": 0,
+                    "currency": "INR",
+                    "propertyClass": 0,
+                    "name": "FabHotel Atithi Residency I - Nr BKC",
+                    "mainPhotoId": 608801802,
+                    "checkoutDate": "2025-01-25",
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/608801802.jpg?k=7c0dfb160b588ad23159927c2c9db5305b9276c2af5ba3ea40e0b5628b2072c0&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/608801802.jpg?k=7c0dfb160b588ad23159927c2c9db5305b9276c2af5ba3ea40e0b5628b2072c0&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/608801802.jpg?k=7c0dfb160b588ad23159927c2c9db5305b9276c2af5ba3ea40e0b5628b2072c0&o="
+                    ],
+                    "reviewCount": 55,
+                    "isPreferred": true,
+                    "blockIds": [
+                        "1273427803_403182916_2_0_0"
+                    ],
+                    "optOutFromGalleryChanges": 1,
+                    "qualityClass": 3,
+                    "ufi": -2092174,
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "11:00"
+                    },
+                    "countryCode": "in",
+                    "checkin": {
+                        "fromTime": "12:00",
+                        "untilTime": "00:00"
+                    },
+                    "reviewScore": 6.5,
+                    "checkinDate": "2025-01-24",
+                    "latitude": 19.0960486466865,
+                    "reviewScoreWord": "Pleasant",
+                    "position": 1,
+                    "longitude": 72.8837016464187
+                }
+            },
+            {
+                "hotel_id": 12551334,
+                "accessibilityLabel": "FabHotel 7 Square - Nr BKC.\n3 out of 5 stars.\n6.0 Pleasant 39 reviews.\n‎Santacruz‬ • ‎1.1 km from downtown‬.\nEarly 2025 Deal.\n Hotel room : 1 bed.\nOriginal price 284 AED. Current price 139 AED..\n+17 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "id": 12551334,
+                    "rankingPosition": 2,
+                    "currency": "INR",
+                    "accuratePropertyClass": 3,
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 139.1142149998
+                        },
+                        "excludedPrice": {
+                            "value": 16.6937054268426,
+                            "currency": "AED"
+                        },
+                        "strikethroughPrice": {
+                            "currency": "AED",
+                            "value": 283.906561224081
+                        },
+                        "benefitBadges": [
+                            {
+                                "explanation": "Early 2025 Deal",
+                                "variant": "constructive",
+                                "identifier": "Early Year Deals",
+                                "text": "Early 2025 Deal"
+                            }
+                        ],
+                        "taxExceptions": []
+                    },
+                    "wishlistName": "Mumbai",
+                    "name": "FabHotel 7 Square - Nr BKC",
+                    "mainPhotoId": 587729872,
+                    "propertyClass": 3,
+                    "reviewCount": 39,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/587729872.jpg?k=79e84176cac40f24772edb3f45446389fb938490a950f2d780683698cb690e09&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/587729872.jpg?k=79e84176cac40f24772edb3f45446389fb938490a950f2d780683698cb690e09&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/587729872.jpg?k=79e84176cac40f24772edb3f45446389fb938490a950f2d780683698cb690e09&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "optOutFromGalleryChanges": 1,
+                    "blockIds": [
+                        "1255133401_398323600_2_0_0"
+                    ],
+                    "isPreferred": true,
+                    "countryCode": "in",
+                    "checkout": {
+                        "untilTime": "11:00",
+                        "fromTime": "00:00"
+                    },
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "longitude": 72.868423,
+                    "position": 2,
+                    "reviewScoreWord": "Pleasant",
+                    "latitude": 19.0713773,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 6,
+                    "checkin": {
+                        "untilTime": "00:00",
+                        "fromTime": "12:00"
+                    }
+                }
+            },
+            {
+                "hotel_id": 9624961,
+                "accessibilityLabel": "Fabhotel Glorify Palace - Nr Mumbai International Airport.\n3 out of 5 stars.\n6.7 Pleasant 87 reviews.\n‎Western Suburbs‬ • ‎2.4 km from downtown‬.\nEarly 2025 Deal.\n Hotel room : 1 bed.\nOriginal price 145 AED. Current price 71 AED..\n+9 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "position": 3,
+                    "reviewScoreWord": "Pleasant",
+                    "longitude": 72.8838712296219,
+                    "checkin": {
+                        "fromTime": "12:00",
+                        "untilTime": "00:00"
+                    },
+                    "checkinDate": "2025-01-24",
+                    "latitude": 19.097011052547,
+                    "reviewScore": 6.7,
+                    "optOutFromGalleryChanges": 1,
+                    "blockIds": [
+                        "962496101_398324504_2_2_0"
+                    ],
+                    "isPreferred": true,
+                    "ufi": -2092174,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "11:00"
+                    },
+                    "qualityClass": 0,
+                    "name": "Fabhotel Glorify Palace - Nr Mumbai International Airport",
+                    "mainPhotoId": 502546502,
+                    "propertyClass": 3,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/502546502.jpg?k=ececd54152493f460a1b1827174df0c8722b5e8acce8d44d00312482c0d2b09d&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/502546502.jpg?k=ececd54152493f460a1b1827174df0c8722b5e8acce8d44d00312482c0d2b09d&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/502546502.jpg?k=ececd54152493f460a1b1827174df0c8722b5e8acce8d44d00312482c0d2b09d&o="
+                    ],
+                    "reviewCount": 87,
+                    "checkoutDate": "2025-01-25",
+                    "id": 9624961,
+                    "rankingPosition": 3,
+                    "accuratePropertyClass": 3,
+                    "currency": "INR",
+                    "priceBreakdown": {
+                        "grossPrice": {
+                            "value": 70.8647012254473,
+                            "currency": "AED"
+                        },
+                        "strikethroughPrice": {
+                            "currency": "AED",
+                            "value": 144.621874113027
+                        },
+                        "excludedPrice": {
+                            "value": 8.50376395697982,
+                            "currency": "AED"
+                        },
+                        "benefitBadges": [
+                            {
+                                "variant": "constructive",
+                                "explanation": "Early 2025 Deal",
+                                "identifier": "Early Year Deals",
+                                "text": "Early 2025 Deal"
+                            }
+                        ],
+                        "taxExceptions": []
+                    },
+                    "wishlistName": "Mumbai",
+                    "isFirstPage": true
+                }
+            },
+            {
+                "hotel_id": 8394737,
+                "accessibilityLabel": "FabExpress Abad Inn - 700m from Gateway of India.\n3 out of 5 stars.\n6.8 Pleasant 235 reviews.\n‎Colaba‬ • ‎18 km from downtown‬.\nEarly 2025 Deal.\n Hotel room : 1 bed.\nOriginal price 240 AED. Current price 127 AED..\n+15 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "optOutFromGalleryChanges": 1,
+                    "blockIds": [
+                        "839473705_398324865_2_2_0"
+                    ],
+                    "isPreferred": true,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "11:00"
+                    },
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "longitude": 72.8313107594204,
+                    "position": 4,
+                    "reviewScoreWord": "Pleasant",
+                    "latitude": 18.9185253892718,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 6.8,
+                    "checkin": {
+                        "fromTime": "12:00",
+                        "untilTime": "00:00"
+                    },
+                    "id": 8394737,
+                    "rankingPosition": 4,
+                    "currency": "INR",
+                    "accuratePropertyClass": 3,
+                    "isPreferredPlus": true,
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 15.2608681375996
+                        },
+                        "strikethroughPrice": {
+                            "value": 239.950391424448,
+                            "currency": "AED"
+                        },
+                        "grossPrice": {
+                            "value": 127.173903989221,
+                            "currency": "AED"
+                        },
+                        "taxExceptions": [],
+                        "benefitBadges": [
+                            {
+                                "explanation": "Early 2025 Deal",
+                                "variant": "constructive",
+                                "identifier": "Early Year Deals",
+                                "text": "Early 2025 Deal"
+                            }
+                        ]
+                    },
+                    "wishlistName": "Mumbai",
+                    "mainPhotoId": 516480525,
+                    "name": "FabExpress Abad Inn - 700m from Gateway of India",
+                    "propertyClass": 3,
+                    "reviewCount": 235,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/516480525.jpg?k=5dcba7821b0279c5d6121edf06f7fdc2b54c6fcf2e132b12376624df63dfa8d5&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/516480525.jpg?k=5dcba7821b0279c5d6121edf06f7fdc2b54c6fcf2e132b12376624df63dfa8d5&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/516480525.jpg?k=5dcba7821b0279c5d6121edf06f7fdc2b54c6fcf2e132b12376624df63dfa8d5&o="
+                    ],
+                    "checkoutDate": "2025-01-25"
+                }
+            },
+            {
+                "hotel_id": 11540020,
+                "accessibilityLabel": "Treebo Premium Heritage Grand -Majiwada Thane.\n4 out of 5 stars.\n7.7 Good 36 reviews.\n‎21 km from downtown‬.\nMobile-only price.\n Hotel room : 1 bed.\nOriginal price 620 AED. Current price 239 AED..\n+29 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "longitude": 72.9840621849264,
+                    "position": 5,
+                    "reviewScoreWord": "Good",
+                    "latitude": 19.2324628559677,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 7.7,
+                    "checkin": {
+                        "fromTime": "12:00",
+                        "untilTime": "00:00"
+                    },
+                    "optOutFromGalleryChanges": 1,
+                    "blockIds": [
+                        "1154002002_400592687_2_1_0_294951"
+                    ],
+                    "isPreferred": true,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "11:00"
+                    },
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "name": "Treebo Premium Heritage Grand -Majiwada Thane",
+                    "mainPhotoId": 529909515,
+                    "propertyClass": 4,
+                    "reviewCount": 36,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/529909515.jpg?k=4ecf16852e1698bd0b1c3f5fcfdf466832220b7907fdb5898eb4a2701f9c5ede&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/529909515.jpg?k=4ecf16852e1698bd0b1c3f5fcfdf466832220b7907fdb5898eb4a2701f9c5ede&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/529909515.jpg?k=4ecf16852e1698bd0b1c3f5fcfdf466832220b7907fdb5898eb4a2701f9c5ede&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "id": 11540020,
+                    "rankingPosition": 5,
+                    "currency": "INR",
+                    "accuratePropertyClass": 4,
+                    "isPreferredPlus": true,
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "benefitBadges": [
+                            {
+                                "variant": "constructive",
+                                "explanation": "Mobile-only price",
+                                "text": "Mobile-only price",
+                                "identifier": "Mobile Rate"
+                            }
+                        ],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 238.810492695561
+                        },
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 28.6572584829277
+                        },
+                        "strikethroughPrice": {
+                            "currency": "AED",
+                            "value": 620.286916332916
+                        }
+                    },
+                    "wishlistName": "Mumbai"
+                }
+            },
+            {
+                "hotel_id": 401149,
+                "accessibilityLabel": "Hotel Oriental Aster - Mumbai International Airport.\n4 out of 5 stars.\n7.5 Good 982 reviews.\n‎Western Suburbs‬ • ‎3.9 km from downtown‬.\n Hotel room : 1 bed.\n213 AED.\n+26 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "propertyClass": 4,
+                    "mainPhotoId": 342883399,
+                    "name": "Hotel Oriental Aster - Mumbai International Airport",
+                    "reviewCount": 982,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/342883399.jpg?k=e2713955a2bcb82f59cb344396d359f1385a6454213a3bdd62be5f80c25ac283&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/342883399.jpg?k=e2713955a2bcb82f59cb344396d359f1385a6454213a3bdd62be5f80c25ac283&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/342883399.jpg?k=e2713955a2bcb82f59cb344396d359f1385a6454213a3bdd62be5f80c25ac283&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "rankingPosition": 6,
+                    "id": 401149,
+                    "currency": "INR",
+                    "accuratePropertyClass": 4,
+                    "isFirstPage": true,
+                    "wishlistName": "Mumbai",
+                    "priceBreakdown": {
+                        "benefitBadges": [],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 213.196951167519
+                        },
+                        "excludedPrice": {
+                            "value": 25.5836335682636,
+                            "currency": "AED"
+                        }
+                    },
+                    "longitude": 72.8616258502007,
+                    "reviewScoreWord": "Good",
+                    "position": 6,
+                    "reviewScore": 7.5,
+                    "checkinDate": "2025-01-24",
+                    "latitude": 19.1079188199381,
+                    "checkin": {
+                        "fromTime": "13:00",
+                        "untilTime": "00:00"
+                    },
+                    "optOutFromGalleryChanges": 1,
+                    "isPreferred": true,
+                    "blockIds": [
+                        "40114904_393772939_2_1_0"
+                    ],
+                    "checkout": {
+                        "untilTime": "12:00",
+                        "fromTime": "00:00"
+                    },
+                    "countryCode": "in",
+                    "ufi": -2092174,
+                    "qualityClass": 0
+                }
+            },
+            {
+                "hotel_id": 8778629,
+                "accessibilityLabel": "Hotel Ariana Residency.\n4 out of 5 stars.\n7.0 Good 604 reviews.\n‎Western Suburbs‬ • ‎7 km from downtown‬\n‎1.5 km from beach‬.\nEarly 2025 Deal.\n Hotel room : 1 bed.\nOriginal price 431 AED. Current price 293 AED..\n+35 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "longitude": 72.8326159372177,
+                    "reviewScoreWord": "Good",
+                    "position": 7,
+                    "reviewScore": 7,
+                    "latitude": 19.1275934612682,
+                    "checkinDate": "2025-01-24",
+                    "checkin": {
+                        "fromTime": "12:00",
+                        "untilTime": "00:00"
+                    },
+                    "optOutFromGalleryChanges": 0,
+                    "isPreferred": true,
+                    "blockIds": [
+                        "877862902_386352140_2_2_0"
+                    ],
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "11:00"
+                    },
+                    "countryCode": "in",
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "propertyClass": 4,
+                    "mainPhotoId": 392019082,
+                    "name": "Hotel Ariana Residency",
+                    "reviewCount": 604,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/392019082.jpg?k=d825a25be93ddb1a2bc16e0fdb573ec8bcb9ed69e286890b207ca558748dca32&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/392019082.jpg?k=d825a25be93ddb1a2bc16e0fdb573ec8bcb9ed69e286890b207ca558748dca32&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/392019082.jpg?k=d825a25be93ddb1a2bc16e0fdb573ec8bcb9ed69e286890b207ca558748dca32&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "rankingPosition": 7,
+                    "id": 8778629,
+                    "currency": "INR",
+                    "accuratePropertyClass": 4,
+                    "isFirstPage": true,
+                    "isPreferredPlus": true,
+                    "wishlistName": "Mumbai",
+                    "priceBreakdown": {
+                        "benefitBadges": [
+                            {
+                                "explanation": "Early 2025 Deal",
+                                "variant": "constructive",
+                                "text": "Early 2025 Deal",
+                                "identifier": "Early Year Deals"
+                            }
+                        ],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "value": 293.405147633612,
+                            "currency": "AED"
+                        },
+                        "strikethroughPrice": {
+                            "currency": "AED",
+                            "value": 431.478158284724
+                        },
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 35.2086169290596
+                        }
+                    }
+                }
+            },
+            {
+                "hotel_id": 78794,
+                "accessibilityLabel": "Trident Nariman Point.\n5 out of 5 stars.\n8.7 Excellent 4477 reviews.\n‎In downtown‬\n‎2.8 km from beach‬.\n Hotel room : 1 bed.\n897 AED.\n+161 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "checkin": {
+                        "fromTime": "14:00",
+                        "untilTime": "00:00"
+                    },
+                    "latitude": 18.9276509091609,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 8.7,
+                    "position": 8,
+                    "reviewScoreWord": "Excellent",
+                    "longitude": 72.8205800056458,
+                    "qualityClass": 0,
+                    "ufi": -2092174,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "12:00"
+                    },
+                    "blockIds": [
+                        "7879419_364831139_2_2_0"
+                    ],
+                    "isPreferred": true,
+                    "optOutFromGalleryChanges": 0,
+                    "checkoutDate": "2025-01-25",
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/604298804.jpg?k=cce8e6992a6c78904e7a67b9611da9a34ed490aada9e82aa865b70f308200755&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/604298804.jpg?k=cce8e6992a6c78904e7a67b9611da9a34ed490aada9e82aa865b70f308200755&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/604298804.jpg?k=cce8e6992a6c78904e7a67b9611da9a34ed490aada9e82aa865b70f308200755&o="
+                    ],
+                    "reviewCount": 4477,
+                    "name": "Trident Nariman Point",
+                    "mainPhotoId": 604298804,
+                    "propertyClass": 5,
+                    "priceBreakdown": {
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 897.221638179939
+                        },
+                        "excludedPrice": {
+                            "value": 161.499901289818,
+                            "currency": "AED"
+                        },
+                        "benefitBadges": [],
+                        "taxExceptions": []
+                    },
+                    "wishlistName": "Mumbai",
+                    "isFirstPage": true,
+                    "accuratePropertyClass": 5,
+                    "currency": "INR",
+                    "id": 78794,
+                    "rankingPosition": 8
+                }
+            },
+            {
+                "hotel_id": 244526,
+                "accessibilityLabel": "Hotel Bawa International.\n3 out of 5 stars.\n7.2 Good 933 reviews.\n‎Western Suburbs‬ • ‎3.4 km from downtown‬\n‎2.8 km from beach‬.\n Hotel room : 2 beds.\n267 AED.\n+32 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "checkout": {
+                        "untilTime": "12:00",
+                        "fromTime": "00:00"
+                    },
+                    "countryCode": "in",
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "optOutFromGalleryChanges": 0,
+                    "isPreferred": true,
+                    "blockIds": [
+                        "24452610_362139028_2_1_0_587586"
+                    ],
+                    "longitude": 72.8537106513977,
+                    "reviewScoreWord": "Good",
+                    "position": 9,
+                    "reviewScore": 7.2,
+                    "latitude": 19.0963766268583,
+                    "checkinDate": "2025-01-24",
+                    "checkin": {
+                        "fromTime": "14:00",
+                        "untilTime": "00:00"
+                    },
+                    "currency": "INR",
+                    "accuratePropertyClass": 3,
+                    "isFirstPage": true,
+                    "wishlistName": "Mumbai",
+                    "priceBreakdown": {
+                        "benefitBadges": [],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 267.030249458315
+                        },
+                        "excludedPrice": {
+                            "value": 32.043629218767,
+                            "currency": "AED"
+                        }
+                    },
+                    "rankingPosition": 9,
+                    "id": 244526,
+                    "reviewCount": 933,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/78990736.jpg?k=cdb04312c74ae6aa517f7ae9547755a76956c114bfd5d849336db3b26173587b&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/78990736.jpg?k=cdb04312c74ae6aa517f7ae9547755a76956c114bfd5d849336db3b26173587b&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/78990736.jpg?k=cdb04312c74ae6aa517f7ae9547755a76956c114bfd5d849336db3b26173587b&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "propertyClass": 3,
+                    "name": "Hotel Bawa International",
+                    "mainPhotoId": 78990736
+                }
+            },
+            {
+                "hotel_id": 12249339,
+                "accessibilityLabel": "Rudraya Homes - Cozy Premium Serviced Apartments Khar - next to Bandra.\n3 out of 5 for property rating.\n9.3 Wonderful 7 reviews.\n‎Western Suburbs‬ • ‎4.2 km from downtown‬\n‎2.2 km from beach‬.\nEarly 2025 Deal.\n Entire apartment – 28 m² : 2 beds • 1 bedroom • 1 living room • 1 bathroom.\nOriginal price 513 AED. Current price 433 AED..\n+78 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "reviewScoreWord": "Wonderful",
+                    "position": 10,
+                    "longitude": 72.8392108,
+                    "checkin": {
+                        "untilTime": "00:00",
+                        "fromTime": "13:00"
+                    },
+                    "reviewScore": 9.3,
+                    "latitude": 19.0656992,
+                    "checkinDate": "2025-01-24",
+                    "ufi": -2092174,
+                    "checkout": {
+                        "untilTime": "10:00",
+                        "fromTime": "00:00"
+                    },
+                    "countryCode": "in",
+                    "qualityClass": 3,
+                    "optOutFromGalleryChanges": 0,
+                    "isPreferred": true,
+                    "blockIds": [
+                        "1224933901_401832369_2_0_549755813888"
+                    ],
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/607404306.jpg?k=bd329ac9f60a9498b6ed91c01f9c5e150a35c0caba72b50298293fd9157e51ae&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/607404306.jpg?k=bd329ac9f60a9498b6ed91c01f9c5e150a35c0caba72b50298293fd9157e51ae&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/607404306.jpg?k=bd329ac9f60a9498b6ed91c01f9c5e150a35c0caba72b50298293fd9157e51ae&o="
+                    ],
+                    "reviewCount": 7,
+                    "checkoutDate": "2025-01-25",
+                    "propertyClass": 0,
+                    "mainPhotoId": 607404306,
+                    "name": "Rudraya Homes - Cozy Premium Serviced Apartments Khar - next to Bandra",
+                    "accuratePropertyClass": 0,
+                    "currency": "INR",
+                    "wishlistName": "Mumbai",
+                    "priceBreakdown": {
+                        "strikethroughPrice": {
+                            "value": 512.655354120052,
+                            "currency": "AED"
+                        },
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 77.860255982545
+                        },
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 432.556960492536
+                        },
+                        "taxExceptions": [],
+                        "benefitBadges": [
+                            {
+                                "identifier": "Early Year Deals",
+                                "text": "Early 2025 Deal",
+                                "explanation": "Early 2025 Deal",
+                                "variant": "constructive"
+                            }
+                        ]
+                    },
+                    "isFirstPage": true,
+                    "isPreferredPlus": true,
+                    "rankingPosition": 10,
+                    "id": 12249339
+                }
+            },
+            {
+                "hotel_id": 411838,
+                "accessibilityLabel": "Hotel Bawa Suites.\n3 out of 5 stars.\n8.0 Very Good 439 reviews.\n‎Khar‬ • ‎4.6 km from downtown‬\n‎1.4 km from beach‬.\n Hotel room : 1 bed.\n310 AED.\n+37 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "12:00"
+                    },
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "optOutFromGalleryChanges": 0,
+                    "blockIds": [
+                        "41183803_353464069_2_0_0"
+                    ],
+                    "isPreferred": true,
+                    "longitude": 72.8339642286301,
+                    "position": 11,
+                    "reviewScoreWord": "Very Good",
+                    "latitude": 19.07110214158,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 8,
+                    "checkin": {
+                        "fromTime": "14:00",
+                        "untilTime": "00:00"
+                    },
+                    "currency": "INR",
+                    "accuratePropertyClass": 3,
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "benefitBadges": [],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "value": 309.755089371646,
+                            "currency": "AED"
+                        },
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 37.1706098937697
+                        }
+                    },
+                    "wishlistName": "Mumbai",
+                    "id": 411838,
+                    "rankingPosition": 11,
+                    "reviewCount": 439,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/493353407.jpg?k=b18b17d90e2e5de810994daf97499029fa214adbc3de5decfc99643770f32081&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/493353407.jpg?k=b18b17d90e2e5de810994daf97499029fa214adbc3de5decfc99643770f32081&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/493353407.jpg?k=b18b17d90e2e5de810994daf97499029fa214adbc3de5decfc99643770f32081&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "mainPhotoId": 493353407,
+                    "name": "Hotel Bawa Suites",
+                    "propertyClass": 3
+                }
+            },
+            {
+                "hotel_id": 399208,
+                "accessibilityLabel": "Trident Bandra Kurla.\n5 out of 5 stars.\n8.8 Excellent 3556 reviews.\n‎Bandra‬ • ‎1.5 km from downtown‬.\n1 bed.\n673 AED.\n+121 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "qualityClass": 0,
+                    "ufi": -2092174,
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "12:00"
+                    },
+                    "countryCode": "in",
+                    "isPreferred": true,
+                    "blockIds": [
+                        "39920804_352834357_2_42_0"
+                    ],
+                    "optOutFromGalleryChanges": 0,
+                    "checkin": {
+                        "untilTime": "00:00",
+                        "fromTime": "14:00"
+                    },
+                    "reviewScore": 8.8,
+                    "checkinDate": "2025-01-24",
+                    "latitude": 19.0666404941471,
+                    "reviewScoreWord": "Excellent",
+                    "position": 12,
+                    "longitude": 72.8675293922424,
+                    "wishlistName": "Mumbai",
+                    "priceBreakdown": {
+                        "grossPrice": {
+                            "value": 672.916228634954,
+                            "currency": "AED"
+                        },
+                        "excludedPrice": {
+                            "value": 121.124925967364,
+                            "currency": "AED"
+                        },
+                        "benefitBadges": [],
+                        "taxExceptions": []
+                    },
+                    "isFirstPage": true,
+                    "accuratePropertyClass": 5,
+                    "currency": "INR",
+                    "rankingPosition": 12,
+                    "id": 399208,
+                    "checkoutDate": "2025-01-25",
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/33034375.jpg?k=ebad21bc68081acf90d3fc69b50bc8a713a60df7eb219351be8ca0e409473758&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/33034375.jpg?k=ebad21bc68081acf90d3fc69b50bc8a713a60df7eb219351be8ca0e409473758&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/33034375.jpg?k=ebad21bc68081acf90d3fc69b50bc8a713a60df7eb219351be8ca0e409473758&o="
+                    ],
+                    "reviewCount": 3556,
+                    "propertyClass": 5,
+                    "name": "Trident Bandra Kurla",
+                    "mainPhotoId": 33034375
+                }
+            },
+            {
+                "hotel_id": 1362336,
+                "accessibilityLabel": "Hotel Linkway.\n2 out of 5 stars.\n8.3 Very Good 469 reviews.\n‎Khar‬ • ‎4.6 km from downtown‬\n‎1.4 km from beach‬.\n Hotel room : Beds: 1 double or 2 twins.\n137 AED.\n+16 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "qualityClass": 0,
+                    "ufi": -2092174,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "12:00"
+                    },
+                    "blockIds": [
+                        "136233601_142265761_0_0_0"
+                    ],
+                    "isPreferred": true,
+                    "optOutFromGalleryChanges": 0,
+                    "checkin": {
+                        "fromTime": "12:00",
+                        "untilTime": "16:00"
+                    },
+                    "latitude": 19.0718236623439,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 8.3,
+                    "position": 13,
+                    "reviewScoreWord": "Very Good",
+                    "longitude": 72.8343397378922,
+                    "priceBreakdown": {
+                        "benefitBadges": [],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 136.719487722657
+                        },
+                        "excludedPrice": {
+                            "value": 16.4063381600087,
+                            "currency": "AED"
+                        }
+                    },
+                    "wishlistName": "Mumbai",
+                    "isFirstPage": true,
+                    "accuratePropertyClass": 2,
+                    "currency": "INR",
+                    "id": 1362336,
+                    "rankingPosition": 13,
+                    "checkoutDate": "2025-01-25",
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/162282985.jpg?k=8442c7cc0bfdd20c0d7f92e11aa6dbf52e8b3836565582fb6514f212aa2778a8&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/162282985.jpg?k=8442c7cc0bfdd20c0d7f92e11aa6dbf52e8b3836565582fb6514f212aa2778a8&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/162282985.jpg?k=8442c7cc0bfdd20c0d7f92e11aa6dbf52e8b3836565582fb6514f212aa2778a8&o="
+                    ],
+                    "reviewCount": 469,
+                    "mainPhotoId": 162282985,
+                    "name": "Hotel Linkway",
+                    "propertyClass": 2
+                }
+            },
+            {
+                "hotel_id": 74722,
+                "accessibilityLabel": "Taj Lands End.\n5 out of 5 stars.\n8.6 Excellent 3253 reviews.\n‎Bandra‬ • ‎7 km from downtown‬\n‎1.9 km from beach‬.\n1 bed.\n705 AED.\n+127 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "checkoutDate": "2025-01-25",
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/13800549.jpg?k=2239f273986987fa71ef3c94ab6f127feb2b859ab63f057980c074689c62c04c&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/13800549.jpg?k=2239f273986987fa71ef3c94ab6f127feb2b859ab63f057980c074689c62c04c&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/13800549.jpg?k=2239f273986987fa71ef3c94ab6f127feb2b859ab63f057980c074689c62c04c&o="
+                    ],
+                    "reviewCount": 3253,
+                    "mainPhotoId": 13800549,
+                    "name": "Taj Lands End",
+                    "propertyClass": 5,
+                    "priceBreakdown": {
+                        "benefitBadges": [],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 704.959858569952
+                        },
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 126.892779584857
+                        }
+                    },
+                    "wishlistName": "Mumbai",
+                    "isFirstPage": true,
+                    "accuratePropertyClass": 5,
+                    "currency": "INR",
+                    "id": 74722,
+                    "rankingPosition": 14,
+                    "checkin": {
+                        "untilTime": "00:00",
+                        "fromTime": "14:00"
+                    },
+                    "latitude": 19.0437067461031,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 8.6,
+                    "position": 14,
+                    "reviewScoreWord": "Excellent",
+                    "longitude": 72.8190377354622,
+                    "qualityClass": 0,
+                    "ufi": -2092174,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "12:00"
+                    },
+                    "blockIds": [
+                        "7472218_364461997_2_42_0"
+                    ],
+                    "isPreferred": true,
+                    "optOutFromGalleryChanges": 0
+                }
+            },
+            {
+                "hotel_id": 244538,
+                "accessibilityLabel": "Hotel Bawa Continental.\n3 out of 5 stars.\n7.9 Good 823 reviews.\n‎Juhu‬ • ‎6 km from downtown‬\n‎200 m from beach‬.\n Hotel room : Beds: 1 double or 2 twins.\n449 AED.\n+81 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/189285663.jpg?k=15330f682a23ad9108f47c8d9fd7aacf7be7d034a8bd9ea55f3a19ff7b6f55dd&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/189285663.jpg?k=15330f682a23ad9108f47c8d9fd7aacf7be7d034a8bd9ea55f3a19ff7b6f55dd&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/189285663.jpg?k=15330f682a23ad9108f47c8d9fd7aacf7be7d034a8bd9ea55f3a19ff7b6f55dd&o="
+                    ],
+                    "reviewCount": 823,
+                    "checkoutDate": "2025-01-25",
+                    "mainPhotoId": 189285663,
+                    "name": "Hotel Bawa Continental",
+                    "propertyClass": 3,
+                    "accuratePropertyClass": 3,
+                    "currency": "INR",
+                    "priceBreakdown": {
+                        "grossPrice": {
+                            "value": 448.61081908997,
+                            "currency": "AED"
+                        },
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 80.7499506449092
+                        },
+                        "benefitBadges": [],
+                        "taxExceptions": []
+                    },
+                    "wishlistName": "Mumbai",
+                    "isFirstPage": true,
+                    "id": 244538,
+                    "rankingPosition": 15,
+                    "position": 15,
+                    "reviewScoreWord": "Good",
+                    "longitude": 72.8274813294411,
+                    "checkin": {
+                        "fromTime": "14:00",
+                        "untilTime": "00:00"
+                    },
+                    "latitude": 19.1005713466047,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 7.9,
+                    "ufi": -2092174,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "12:00"
+                    },
+                    "qualityClass": 0,
+                    "optOutFromGalleryChanges": 0,
+                    "blockIds": [
+                        "24453801_403398156_2_2_0"
+                    ],
+                    "isPreferred": true
+                }
+            },
+            {
+                "hotel_id": 420487,
+                "accessibilityLabel": "The Resort.\n4 out of 5 stars.\n7.8 Good 976 reviews.\n‎Western Suburbs‬ • ‎14 km from downtown‬\n‎Beachfront‬.\n Hotel room : 1 bed.\nOriginal price 449 AED. Current price 426 AED..\n+77 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "priceBreakdown": {
+                        "benefitBadges": [],
+                        "taxExceptions": [],
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 426.139689537554
+                        },
+                        "strikethroughPrice": {
+                            "value": 448.568094250056,
+                            "currency": "AED"
+                        },
+                        "excludedPrice": {
+                            "value": 76.7051471647483,
+                            "currency": "AED"
+                        }
+                    },
+                    "wishlistName": "Mumbai",
+                    "isFirstPage": true,
+                    "accuratePropertyClass": 4,
+                    "currency": "INR",
+                    "id": 420487,
+                    "rankingPosition": 16,
+                    "checkoutDate": "2025-01-25",
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/533678781.jpg?k=f0dbb6c09eb286f7a76624088989a8bd52ea6b6f283bf6f2e03c587472572550&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/533678781.jpg?k=f0dbb6c09eb286f7a76624088989a8bd52ea6b6f283bf6f2e03c587472572550&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/533678781.jpg?k=f0dbb6c09eb286f7a76624088989a8bd52ea6b6f283bf6f2e03c587472572550&o="
+                    ],
+                    "reviewCount": 976,
+                    "name": "The Resort",
+                    "mainPhotoId": 533678781,
+                    "propertyClass": 4,
+                    "qualityClass": 0,
+                    "ufi": -2092174,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "11:00"
+                    },
+                    "blockIds": [
+                        "42048701_399385679_2_41_0"
+                    ],
+                    "isPreferred": true,
+                    "optOutFromGalleryChanges": 0,
+                    "checkin": {
+                        "fromTime": "14:00",
+                        "untilTime": "00:00"
+                    },
+                    "checkinDate": "2025-01-24",
+                    "latitude": 19.1733980241533,
+                    "reviewScore": 7.8,
+                    "position": 16,
+                    "reviewScoreWord": "Good",
+                    "longitude": 72.7960512042046
+                }
+            },
+            {
+                "hotel_id": 7781698,
+                "accessibilityLabel": "ibis Mumbai Vikhroli - An Accor Brand.\n3 out of 5 stars.\n7.6 Good 708 reviews.\n‎Central Suburbs‬ • ‎7 km from downtown‬.\n Hotel room : 1 bed.\n286 AED.\n+34 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "id": 7781698,
+                    "rankingPosition": 17,
+                    "currency": "INR",
+                    "accuratePropertyClass": 3,
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 34.3507705225182
+                        },
+                        "grossPrice": {
+                            "value": 286.256427419314,
+                            "currency": "AED"
+                        },
+                        "taxExceptions": [],
+                        "benefitBadges": []
+                    },
+                    "wishlistName": "Mumbai",
+                    "mainPhotoId": 588273176,
+                    "name": "ibis Mumbai Vikhroli - An Accor Brand",
+                    "propertyClass": 3,
+                    "reviewCount": 708,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/588273176.jpg?k=d0cff3e4c44303c5af9a68e7b831f2a11c3b3a6be541ce394141582100ff225a&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/588273176.jpg?k=d0cff3e4c44303c5af9a68e7b831f2a11c3b3a6be541ce394141582100ff225a&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/588273176.jpg?k=d0cff3e4c44303c5af9a68e7b831f2a11c3b3a6be541ce394141582100ff225a&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "optOutFromGalleryChanges": 0,
+                    "blockIds": [
+                        "778169801_405342287_2_42_0"
+                    ],
+                    "isPreferred": true,
+                    "countryCode": "in",
+                    "checkout": {
+                        "fromTime": "00:00",
+                        "untilTime": "12:00"
+                    },
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "longitude": 72.9263665167064,
+                    "position": 17,
+                    "reviewScoreWord": "Good",
+                    "checkinDate": "2025-01-24",
+                    "latitude": 19.120665231712,
+                    "reviewScore": 7.6,
+                    "checkin": {
+                        "fromTime": "14:00",
+                        "untilTime": "00:00"
+                    }
+                }
+            },
+            {
+                "hotel_id": 78790,
+                "accessibilityLabel": "The Oberoi Mumbai.\n5 out of 5 stars.\n9.3 Wonderful 2009 reviews.\n‎In downtown‬\n‎2.9 km from beach‬.\n Hotel room : 1 bed.\n1324 AED.\n+238 AED taxes and charges.\nFree cancellation.",
+                "property": {
+                    "currency": "INR",
+                    "accuratePropertyClass": 5,
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 238.404616189732
+                        },
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 1324.47003731324
+                        },
+                        "taxExceptions": [],
+                        "benefitBadges": []
+                    },
+                    "wishlistName": "Mumbai",
+                    "id": 78790,
+                    "rankingPosition": 18,
+                    "reviewCount": 2009,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/622849634.jpg?k=99d6284ec85b32ccc3f3599b13e0bff801e867a6d5d3dcdfc13cca713da60844&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/622849634.jpg?k=99d6284ec85b32ccc3f3599b13e0bff801e867a6d5d3dcdfc13cca713da60844&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/622849634.jpg?k=99d6284ec85b32ccc3f3599b13e0bff801e867a6d5d3dcdfc13cca713da60844&o="
+                    ],
+                    "checkoutDate": "2025-01-25",
+                    "name": "The Oberoi Mumbai",
+                    "mainPhotoId": 622849634,
+                    "propertyClass": 5,
+                    "countryCode": "in",
+                    "checkout": {
+                        "untilTime": "12:00",
+                        "fromTime": "00:00"
+                    },
+                    "ufi": -2092174,
+                    "qualityClass": 0,
+                    "optOutFromGalleryChanges": 0,
+                    "blockIds": [
+                        "7879005_365311554_2_2_0"
+                    ],
+                    "isPreferred": true,
+                    "longitude": 72.8202795982361,
+                    "position": 18,
+                    "reviewScoreWord": "Wonderful",
+                    "latitude": 18.9271028775779,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 9.3,
+                    "checkin": {
+                        "untilTime": "00:00",
+                        "fromTime": "14:00"
+                    }
+                }
+            },
+            {
+                "hotel_id": 1548237,
+                "accessibilityLabel": "Taj Santacruz.\n5 out of 5 stars.\n8.8 Excellent 2703 reviews.\n‎3.1 km from downtown‬.\n Hotel room : 1 bed.\n684 AED.\n+123 AED taxes and charges.\nFree cancellation.\nNo prepayment needed.",
+                "property": {
+                    "latitude": 19.0921868701275,
+                    "checkinDate": "2025-01-24",
+                    "reviewScore": 8.8,
+                    "checkin": {
+                        "untilTime": "00:00",
+                        "fromTime": "14:00"
+                    },
+                    "longitude": 72.853407561779,
+                    "position": 19,
+                    "reviewScoreWord": "Excellent",
+                    "qualityClass": 0,
+                    "countryCode": "in",
+                    "checkout": {
+                        "untilTime": "12:00",
+                        "fromTime": "00:00"
+                    },
+                    "ufi": -2092174,
+                    "blockIds": [
+                        "154823717_402001847_2_34_0"
+                    ],
+                    "isPreferred": true,
+                    "optOutFromGalleryChanges": 1,
+                    "checkoutDate": "2025-01-25",
+                    "reviewCount": 2703,
+                    "photoUrls": [
+                        "https://cf.bstatic.com/xdata/images/hotel/square500/125011716.jpg?k=a11b2cf7938b3214652ec26dbe0a51850850e41270bf9a43e986e3d3de848748&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square1024/125011716.jpg?k=a11b2cf7938b3214652ec26dbe0a51850850e41270bf9a43e986e3d3de848748&o=",
+                        "https://cf.bstatic.com/xdata/images/hotel/square2000/125011716.jpg?k=a11b2cf7938b3214652ec26dbe0a51850850e41270bf9a43e986e3d3de848748&o="
+                    ],
+                    "mainPhotoId": 125011716,
+                    "name": "Taj Santacruz",
+                    "propertyClass": 5,
+                    "isFirstPage": true,
+                    "priceBreakdown": {
+                        "taxExceptions": [],
+                        "benefitBadges": [],
+                        "excludedPrice": {
+                            "currency": "AED",
+                            "value": 123.047543839862
+                        },
+                        "grossPrice": {
+                            "currency": "AED",
+                            "value": 683.597438613287
+                        }
+                    },
+                    "wishlistName": "Mumbai",
+                    "currency": "INR",
+                    "accuratePropertyClass": 5,
+                    "id": 1548237,
+                    "rankingPosition": 19
+                }
+            }
+        ],
+        "meta": [
+            {
+                "title": "456 properties"
+            }
+        ],
+        "appear": [
+            {
+                "id": "cma",
+                "component": {
+                    "props": {
+                        "content": {
+                            "props": {
+                                "items": [
+                                    {
+                                        "props": {
+                                            "component": {
+                                                "props": {
+                                                    "spacing": "spacing_half",
+                                                    "items": [
+                                                        {
+                                                            "props": {
+                                                                "text": [
+                                                                    {
+                                                                        "font": "body_2",
+                                                                        "text": "Read more on how payments affect the order of listed properties"
+                                                                    },
+                                                                    {
+                                                                        "text": "  ",
+                                                                        "color": "foreground",
+                                                                        "font": "strong_2"
+                                                                    },
+                                                                    {
+                                                                        "linkActions": [
+                                                                            {
+                                                                                "props": {
+                                                                                    "url": "booking://webview?url=https%3A%2F%2Fm.booking.com%2Fgeneral.en-us.html%3Faid%3D332731%3Btmpl%3Ddocs%2Fterms-and-conditions"
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "text": "Learn more",
+                                                                        "color": "action_foreground",
+                                                                        "font": "body_2"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "props": {}
+                                    },
+                                    {
+                                        "props": {
+                                            "component": {
+                                                "props": {
+                                                    "icon": "close",
+                                                    "tertiaryTintedColor": "foreground",
+                                                    "variant": "tertiary_tinted",
+                                                    "accessibilityLabel": "Close"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "fitContentWidth": true
+                            }
+                        },
+                        "fill": true
+                    }
+                }
+            },
+            {
+                "contentUrl": "https://mobile-apps.booking.com/json/mobile.saba?route_path=saba-chat-entrypoint&add_bh_info=1&add_genius_percentage_value=1&add_ribbon_text=1&affiliate_id=332731&arrival_date=2025-01-24&autoextend=1&booked_x_times_for_dates=1&booked_x_times_threshold=1&categories_filter_additional_data=&change_popularity_sort_option_copy_tag=1&change_sort_options_copy_tags=1&check_excluded_charge_or_tax=1&check_flexible_dates=1&check_is_candidate_wholesaler=1&currency_code=AED&dark_mode=1&deeplink_sec_since_click=168567.9046729803&departure_date=2025-01-25&dest_ids=-2092174&device_id=57d11ec8bad14e119e4c15a86202c23f&distance_unit=metric&dl_sr_adoption=1&dotd=2&exposure_api_version=2.17&fix_dotd=1&flex_window=0&generate_map_bounding_box=1&get_cny_campaign_banner=1&get_skiing_info=1&guest_qty=1&include_amazon_banner=1&include_apartment_config=1&include_badges_in_price_breakdown=1&include_beach_information=1&include_bh_quality_classification=1&include_block_ids=1&include_bsb_info=1&include_bwallet_hotel_eligibility=1&include_composite_breakdown=1&include_cpc_non_trader_copy=1&include_excluded_charges_detail=1&include_free_cancellation=1&include_genius_badge=1&include_last_reservation=1&include_nr_bookings_best_range_message=1&include_nr_bookings_today=1&include_offered_bed_types=1&include_preview_cards=1&include_rack_rate_savings=1&include_rtb=1&include_ski_information=1&languagecode=en-us&location_source=recents&mark_first_highlighted_hotel=1&min_saba_version=31&network_type=wifi&new_segments_carousel=1&offset=0&optimized_call=1&outcome=search_results&page_define_enabled=1&pref_match=0&reason=change_sort_options&remove_wishlist_padding=1&room_qty=1&rows=auto&saba=1&saba_payload_root=1&saba_version=50&sb_calendar_open=1&search_type=city&send_ranking_version=1&send_search_id=1&show_beach_filter_badge=1&show_city_distance=1&show_distance_to_beach=1&show_distance_to_nearest_public_transport=1&show_genius_free_breakfast=0&show_if_mobile_deal=1&show_negotiated_rates=1&show_no_prepayment=1&show_policy=1&show_review_score_breakdowns=1&show_selected_filter_values=1&show_soldout=1&sort_by=auto&sort_by_source=sort_options&sort_genius_new_copy=1&source=search_results&temperature_unit=c&travel_purpose=&unfiltered_count_enabled=1&units=metric&use_dest_based_list_creation=1&use_direct_payment=1&user_os=15.5&user_version=36.8-iphone&categories_filter=price%3A%3AAED-min-max&children_qty=2&children_age=0%2C17&page=search-results"
+            },
+            {
+                "id": "banner_qualityrating",
+                "component": {
+                    "props": {
+                        "text": "Properties with these icons have been awarded Booking.com's quality rating for homes",
+                        "title": ""
+                    }
+                }
+            },
+            {
+                "component": {
+                    "props": {
+                        "title": "Sign in and save money",
+                        "text": "Get instant access to our Genius loyalty program and enjoy discounts at properties worldwide."
+                    }
+                },
+                "id": "signin_now"
+            }
+        ]
+    }
+}

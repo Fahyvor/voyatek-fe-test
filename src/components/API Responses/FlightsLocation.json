@@ -1,0 +1,216 @@
+{
+    "status": true,
+    "message": "Success",
+    "timestamp": 1736601154097,
+    "data": [
+        {
+            "id": "DEL.AIRPORT",
+            "type": "AIRPORT",
+            "name": "Delhi International Airport",
+            "code": "DEL",
+            "city": "DEL",
+            "cityName": "New Delhi",
+            "regionName": "Delhi NCR",
+            "country": "IN",
+            "countryName": "India",
+            "countryNameShort": "India",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o=",
+            "distanceToCity": {
+                "value": 14.757868271664938,
+                "unit": "km"
+            },
+            "parent": "DEL"
+        },
+        {
+            "id": "NYC.CITY",
+            "type": "CITY",
+            "name": "New York",
+            "code": "NYC",
+            "regionName": "New York",
+            "country": "US",
+            "countryName": "United States",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/977436.jpg?k=ee0baaf82d482fae02bcb8dda25be1abff1da43d187bbb26ae6b2f3c9b5f4e61&o="
+        },
+        {
+            "id": "JFK.AIRPORT",
+            "type": "AIRPORT",
+            "name": "John F. Kennedy International Airport",
+            "code": "JFK",
+            "city": "NYC",
+            "cityName": "New York",
+            "regionName": "New York",
+            "country": "US",
+            "countryName": "United States",
+            "countryNameShort": "US",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/977436.jpg?k=ee0baaf82d482fae02bcb8dda25be1abff1da43d187bbb26ae6b2f3c9b5f4e61&o=",
+            "distanceToCity": {
+                "value": 21.381514773782005,
+                "unit": "km"
+            },
+            "parent": "NYC"
+        },
+        {
+            "id": "EWR.AIRPORT",
+            "type": "AIRPORT",
+            "name": "Newark Liberty International Airport",
+            "code": "EWR",
+            "city": "NYC",
+            "cityName": "New York",
+            "region": "NJ",
+            "regionName": "New York",
+            "country": "US",
+            "countryName": "United States",
+            "countryNameShort": "US",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/977436.jpg?k=ee0baaf82d482fae02bcb8dda25be1abff1da43d187bbb26ae6b2f3c9b5f4e61&o=",
+            "distanceToCity": {
+                "value": 18.736453932482238,
+                "unit": "km"
+            },
+            "parent": "NYC"
+        },
+        {
+            "id": "LGA.AIRPORT",
+            "type": "AIRPORT",
+            "name": "LaGuardia Airport",
+            "code": "LGA",
+            "city": "NYC",
+            "cityName": "New York",
+            "regionName": "New York",
+            "country": "US",
+            "countryName": "United States",
+            "countryNameShort": "US",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/977436.jpg?k=ee0baaf82d482fae02bcb8dda25be1abff1da43d187bbb26ae6b2f3c9b5f4e61&o=",
+            "distanceToCity": {
+                "value": 9.28775750350465,
+                "unit": "km"
+            },
+            "parent": "NYC"
+        },
+        {
+            "id": "SYD.AIRPORT",
+            "type": "AIRPORT",
+            "name": "Sydney Kingsford Smith Airport",
+            "code": "SYD",
+            "city": "SYD",
+            "cityName": "Sydney",
+            "regionName": "New South Wales",
+            "country": "AU",
+            "countryName": "Australia",
+            "countryNameShort": "Australia",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/977458.jpg?k=c44825bafc9d3cefc524dc982c691aa5b97e6218761f2b26b811212806f1f508&o=",
+            "distanceToCity": {
+                "value": 7.8384264645051225,
+                "unit": "km"
+            },
+            "parent": "SYD"
+        },
+        {
+            "id": "AKL.AIRPORT",
+            "type": "AIRPORT",
+            "name": "Auckland Airport",
+            "code": "AKL",
+            "city": "AKL",
+            "cityName": "Auckland",
+            "regionName": "Auckland Region",
+            "country": "NZ",
+            "countryName": "New Zealand",
+            "countryNameShort": "New Zealand",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/682129.jpg?k=128ff3f77991fbcc27e08579272e3142b26c0565e4ea5c5e9f52ceb3001f74c9&o=",
+            "distanceToCity": {
+                "value": 17.55107122110258,
+                "unit": "km"
+            },
+            "parent": "AKL"
+        },
+        {
+            "id": "SPK.CITY",
+            "type": "CITY",
+            "name": "Sapporo",
+            "code": "SPK",
+            "regionName": "Hokkaido",
+            "country": "JP",
+            "countryName": "Japan",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/644137.jpg?k=9a4bfb398d53bb499bb201a19f73832e3edb173e94c0a8df25755c796656ff2e&o="
+        },
+        {
+            "id": "CTS.AIRPORT",
+            "type": "AIRPORT",
+            "name": "New Chitose Airport",
+            "code": "CTS",
+            "city": "SPK",
+            "cityName": "Sapporo",
+            "regionName": "Hokkaido",
+            "country": "JP",
+            "countryName": "Japan",
+            "countryNameShort": "Japan",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/644137.jpg?k=9a4bfb398d53bb499bb201a19f73832e3edb173e94c0a8df25755c796656ff2e&o=",
+            "distanceToCity": {
+                "value": 40.43772342755492,
+                "unit": "km"
+            },
+            "parent": "SPK"
+        },
+        {
+            "id": "BUE.CITY",
+            "type": "CITY",
+            "name": "Buenos Aires",
+            "code": "BUE",
+            "country": "AR",
+            "countryName": "Argentina",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/664049.jpg?k=fd691141ae6bdd6048ca0095f5d9bec810f571654be41c9bd556d645a474b025&o="
+        },
+        {
+            "id": "AEP.AIRPORT",
+            "type": "AIRPORT",
+            "name": "Jorge Newbery Airfield",
+            "code": "AEP",
+            "city": "BUE",
+            "cityName": "Buenos Aires",
+            "country": "AR",
+            "countryName": "Argentina",
+            "countryNameShort": "Argentina",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/664049.jpg?k=fd691141ae6bdd6048ca0095f5d9bec810f571654be41c9bd556d645a474b025&o=",
+            "distanceToCity": {
+                "value": 6.156122771135648,
+                "unit": "km"
+            },
+            "parent": "BUE"
+        },
+        {
+            "id": "NCL.AIRPORT",
+            "type": "AIRPORT",
+            "name": "Newcastle International Airport",
+            "code": "NCL",
+            "city": "NCL",
+            "cityName": "Newcastle upon Tyne",
+            "regionName": "Tyne and Wear",
+            "country": "GB",
+            "countryName": "United Kingdom",
+            "countryNameShort": "G.B.",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/687285.jpg?k=84f6f2377af1738b4ee29fccea1af65634fe4258712f96f54491c08f1d026a95&o=",
+            "distanceToCity": {
+                "value": 9.304203979978428,
+                "unit": "km"
+            },
+            "parent": "NCL"
+        },
+        {
+            "id": "BOS.AIRPORT",
+            "type": "AIRPORT",
+            "name": "Logan Airport",
+            "code": "BOS",
+            "city": "BOS",
+            "cityName": "Boston",
+            "regionName": "Massachusetts",
+            "country": "US",
+            "countryName": "United States",
+            "countryNameShort": "US",
+            "photoUri": "https://q-xx.bstatic.com/xdata/images/city/square150/976694.jpg?k=2d9c7cfee16c559fd62fdc7cafb491f4b28494b99525fa00318186e6be96a202&o=",
+            "distanceToCity": {
+                "value": 3.435917755292242,
+                "unit": "km"
+            },
+            "parent": "BOS"
+        }
+    ]
+}

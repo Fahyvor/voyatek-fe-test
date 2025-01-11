@@ -1,0 +1,40 @@
+export const airplaneArray = [
+    {
+      id: 1,
+      type: "First Class",
+      airline: "American Airlines",
+      refNo: "AA-829",
+      departure: "LOS",
+      arrival: "SIN",
+      departureDate: "Sun, 20 Aug",
+      arrivalDate: "Sun, 20 Aug",
+      departureTime: "08:35",
+      arrivalTime: "09:55",
+      duration: "1h 45m",
+      baggage: "20kg",
+      cabinBaggage: "8kg",
+      entertainment: "In flight entertainment",
+      meal: "In flight meal",
+      usb: "USB Port",
+      price: "123,450.00"
+    },
+    {
+      id: 1,
+      type: "First Class",
+      airline: "American Airlines",
+      refNo: "AA-829",
+      departure: "LOS",
+      arrival: "SIN",
+      departureDate: "Sun, 20 Aug",
+      arrivalDate: "Sun, 20 Aug",
+      departureTime: "08:35",
+      arrivalTime: "09:55",
+      duration: "1h 45m",
+      baggage: "20kg",
+      cabinBaggage: "8kg",
+      entertainment: "In flight entertainment",
+      meal: "In flight meal",
+      usb: "USB Port",
+      price: "123,450.00"
+    }
+  ]
