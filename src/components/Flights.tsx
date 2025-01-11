@@ -41,7 +41,7 @@ const Flights = (props: Props) => {
           <img src="/Warehouse.svg" alt="" />
           <p className="font-semibold text-white text-sm">Flights</p>
         </div>
-        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold cursor-pointer" onClick={() => navigate('/add-flights')}>
+        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold cursor-pointer" onClick={() => navigate('/add-flight')}>
           <p>Add Flight</p>
         </div>
       </div>

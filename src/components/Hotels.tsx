@@ -1,8 +1,7 @@
-
-import React, { useEffect  } from 'react'
-import { useNavigate } from 'react-router-dom'  
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';  
 import { useDispatch, useSelector } from 'react-redux';
-import { setHotels } from "../redux/hotelSlice";
+import { setHotels, setSelectedHotel } from "../redux/hotelSlice";
 
 interface HotelProps {
   image: string;
@@ -23,10 +22,36 @@ interface Props {
 
 const Hotels = (props: Props) => {
   const dispatch = useDispatch();
+const navigate = useNavigate();
 
-  // Get hotels from Redux store
-  const hotels = useSelector((state: { hotel: { hotels: HotelProps[] } }) => state.hotel.hotels);
-  const navigate = useNavigate();
+// Get hotels and selected hotel from Redux store
+const hotels = useSelector((state: { hotel: { hotels: HotelProps[] } }) => state.hotel.hotels);
+const selectedHotel = useSelector((state: { hotel: { selectedHotel: HotelProps | null } }) => state.hotel.selectedHotel);
+
+// Dispatch action to set hotels in Redux store when component mounts
+useEffect(() => {
+  // Log hotels data from Redux store before any dispatch
+  console.log('Hotels from Redux:', hotels);
+
+  if (hotels.length === 0) {
+    dispatch(setHotels(props.hotelArray));
+    console.log('Dispatching setHotels action with data:', props.hotelArray);
+    // Assuming props.hotelArray contains the hotel data
+  }
+}, [dispatch, hotels.length, props.hotelArray]);
+
+  // Handle hotel selection
+  const handleHotelSelect = (hotel: HotelProps) => {
+    dispatch(setSelectedHotel(hotel)); // Store selected hotel in Redux
+    navigate(`/hotel-details/${hotel.name}`); // Navigate to the hotel details page (if applicable)
+  };
+
+  const removeHotel = (name: string) => {
+    dispatch({
+      type: 'hotel/removeHotel',
+      payload: name,
+    });
+  };
   return (
     <div className="bg-[#344054] p-4 mx-6">
       <div className="flex justify-between">
@@ -34,7 +59,8 @@ const Hotels = (props: Props) => {
           <img src="/Warehouse.svg" alt="" />
           <p className="font-semibold text-white text-sm">Hotels</p>
         </div>
-        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold cursor-pointer">
+        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold cursor-pointer"
+        onClick={() => navigate('/add-hotel')}>
           <p>Add Hotels</p>
         </div>
       </div>
@@ -88,43 +114,18 @@ const Hotels = (props: Props) => {
 
                   <hr className="w-full border border-gray-200" />
 
-                  <div className="flex justify-between">
-                    <div className="flex gap-3 items-center">
-                      <p>Facilities:</p>
-                      <div className="flex gap-3 items-center">
-                        <img src="/SwimmingPool.svg" alt="" />
-                        <p>Pool</p>
-                      </div>
-
-                      <div className="flex gap-3 items-center">
-                        <img src="/Wine.svg" alt="" />
-                        <p>Bar</p>
-                      </div>
+                  <div className="flex justify-between py-3 items-center text-[#0D6EFD]">
+                    <div className="flex gap-5 items-center">
+                      <p>Hotel details</p>
+                      <p>Price details</p>
                     </div>
-                    <div className="flex gap-3 items-center">
-                      <div className="flex gap-3 items-center">
-                        <img src="/CalendarBlack.svg" alt="" />
-                        <p>Check In: {hotel.checkIn}</p>
-                      </div>
-                      <div className="flex gap-3 items-center">
-                        <img src="/CalendarBlack.svg" alt="" />
-                        <p>Check Out: {hotel.checkOut}</p>
-                      </div>
-                    </div>
+                    <div className="" onClick={() => handleHotelSelect(hotel)}>Edit details</div>
                   </div>
-
-                  <hr className="w-full border border-gray-200" />
-
-                <div className="flex justify-between py-3 items-center text-[#0D6EFD]">
-                  <div className="flex gap-5 items-center">
-                    <p>Hotel details</p>
-                    <p>Price details</p>
-                  </div>
-                  <div className="">Edit details</div>
-                </div>
                 </div>
 
-                <div className="delete_ticket bg-[#FBEAE9] h-full flex py-28 px-2 cursor-pointer">
+                <div className="delete_ticket bg-[#FBEAE9] h-full flex py-28 px-2 cursor-pointer"
+                onClick={() => removeHotel(hotel.name)}
+                >
                   <img src="/X.svg" alt="" />
                 </div>
               </div>
@@ -134,6 +135,6 @@ const Hotels = (props: Props) => {
       )}
     </div>
   );
-}
+};
 
-export default Hotels
+export default Hotels;

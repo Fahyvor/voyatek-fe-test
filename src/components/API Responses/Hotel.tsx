@@ -24,3 +24,5 @@ export const hotelArray = [
       totalPrice: "456,000.00"
     }
   ]
+
+  

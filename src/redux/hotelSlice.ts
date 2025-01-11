@@ -16,11 +16,13 @@ interface HotelProps {
 
 interface HotelState {
   hotels: HotelProps[];
+  selectedHotel: HotelProps | null; // Field to store the selected hotel
 }
 
 // Initial state
 const initialState: HotelState = {
   hotels: [],
+  selectedHotel: null, // Initialize as null
 };
 
 // Create the hotel slice
@@ -28,7 +30,7 @@ const hotelSlice = createSlice({
   name: 'hotel',
   initialState,
   reducers: {
-    // Add or set the hotels array
+    // Set the hotels array
     setHotels: (state, action: PayloadAction<HotelProps[]>) => {
       state.hotels = action.payload;
     },
@@ -40,11 +42,19 @@ const hotelSlice = createSlice({
     removeHotel: (state, action: PayloadAction<string>) => {
       state.hotels = state.hotels.filter(hotel => hotel.name !== action.payload);
     },
+    // Set the selected hotel
+    setSelectedHotel: (state, action: PayloadAction<HotelProps>) => {
+      state.selectedHotel = action.payload;
+    },
+    // Clear the selected hotel
+    clearSelectedHotel: (state) => {
+      state.selectedHotel = null;
+    },
   },
 });
 
 // Export actions for use in components
-export const { setHotels, addHotel, removeHotel } = hotelSlice.actions;
+export const { setHotels, addHotel, removeHotel, setSelectedHotel, clearSelectedHotel } = hotelSlice.actions;
 
 // Export the reducer to configure the store
 export default hotelSlice.reducer;

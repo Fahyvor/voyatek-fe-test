@@ -107,7 +107,7 @@ const Home:React.FC = () => {
         <Flights airplaneArray={airplaneArray} />
 
         {/* Hotels */}
-          <Hotels  hotelArray={hotelArray}/>
+        <Hotels  hotelArray={hotelArray}/>
 
         {/* Activities */}
         <Activities activitiesArray={activitiesArray} /> 

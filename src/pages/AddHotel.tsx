@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
-// Import the JSON data
+import { useDispatch } from 'react-redux';
+import { setSelectedHotel } from '../redux/hotelSlice'; // Import the action
 import hotelsData from '../components/API Responses/Hotels.json';
 
-// Define types for the hotel data
 interface Hotel {
   hotel_id: number;
   accessibilityLabel: string;
@@ -25,17 +24,35 @@ const HotelList: React.FC = () => {
   const [hotels, setHotels] = useState<Hotel[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
+  const dispatch = useDispatch();
 
   useEffect(() => {
     try {
-      // Load the local JSON data
-      setHotels(hotelsData.data.hotels);
+      setHotels(hotelsData.data.hotels); // Assuming your JSON has a `data.hotels` structure
     } catch (err) {
       setError('Failed to load hotels data');
     } finally {
       setLoading(false);
     }
   }, []);
+
+  const handleHotelClick = (hotel: Hotel) => {
+    // Dispatch the selected hotel to the Redux store
+    const hotelToDispatch = {
+      hotel_id: hotel.hotel_id,
+      image: hotel.property.photoUrls[0],
+      name: hotel.property.name,
+      address: "Hotel Address", // You can modify this to include a specific address
+      rating: `${hotel.property.reviewScore} (${hotel.property.reviewScoreWord})`,
+      size: "Hotel Size", // Add the relevant data
+      facilities: "Hotel Facilities", // Add the relevant data
+      price: `₹${hotel.property.priceBreakdown.grossPrice.value}`,
+      checkIn: "Check-in Time", // Add the relevant data
+      checkOut: "Check-out Time", // Add the relevant data
+      totalPrice: `₹${hotel.property.priceBreakdown.grossPrice.value}`,
+    };
+    dispatch(setSelectedHotel(hotelToDispatch));
+  };
 
   if (loading) return <p>Loading hotels...</p>;
   if (error) return <p>{error}</p>;
@@ -45,7 +62,10 @@ const HotelList: React.FC = () => {
       <h1 className="text-3xl font-bold mb-6">Hotels in Mumbai</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {hotels.map((hotel) => (
-          <div key={hotel.hotel_id} className="border rounded-lg overflow-hidden border-gray-300"
+          <div
+            key={hotel.hotel_id}
+            className="border rounded-lg overflow-hidden border-gray-300 cursor-pointer"
+            onClick={() => handleHotelClick(hotel)} // Dispatch the selected hotel on click
           >
             <img
               src={hotel.property.photoUrls[0]}
