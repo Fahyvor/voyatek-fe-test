@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux'; // Import dispatch from redux
 import flightData from '../components/API Responses/Flights.json';
+import { setSelectedFlights, removeSelectedFlight } from '../redux/flightsSlice';
 
 interface FlightSegment {
   departureAirport: {
@@ -19,12 +21,14 @@ interface FlightSegment {
 }
 
 const FlightList: React.FC = () => {
+  const dispatch = useDispatch(); // Access the dispatch function
   const [flights, setFlights] = useState<FlightSegment[]>([]);
   const [filteredFlights, setFilteredFlights] = useState<FlightSegment[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [departureDate, setDepartureDate] = useState('');
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
+  const [selectedFlightIds, setSelectedFlightIds] = useState<string[]>([]); // Keep track of selected flight IDs
 
   useEffect(() => {
     try {
@@ -75,6 +79,19 @@ const FlightList: React.FC = () => {
     setFilteredFlights(filtered);
   }, [searchTerm, departureDate, flights]);
 
+  const handleSelectFlight = (flight: FlightSegment) => {
+    const isSelected = selectedFlightIds.includes(flight.flightNumber.toString());
+    if (isSelected) {
+      // Remove the flight from the selected list
+      setSelectedFlightIds((prev) => prev.filter((id) => id !== flight.flightNumber.toString()));
+      dispatch(removeSelectedFlight(flight.flightNumber)); // Dispatch remove flight action
+    } else {
+      // Add the flight to the selected list
+      setSelectedFlightIds((prev) => [...prev, flight.flightNumber.toString()]);
+      dispatch(setSelectedFlights([flight])); // Dispatch add flight action
+    }
+  };
+
   if (loading) return <p className="text-center text-lg font-medium">Loading flights...</p>;
   if (error) return <p className="text-center text-red-500 text-lg">{error}</p>;
 
@@ -122,6 +139,12 @@ const FlightList: React.FC = () => {
                   <strong>Arrival:</strong> {flight.arrivalAirport.cityName}, {flight.arrivalAirport.countryName} at{' '}
                   {new Date(flight.arrivalTime).toLocaleString()}
                 </p>
+                <button
+                  onClick={() => handleSelectFlight(flight)}
+                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+                >
+                  {selectedFlightIds.includes(flight.flightNumber) ? 'Deselect Flight' : 'Select Flight'}
+                </button>
               </div>
             </div>
           ))

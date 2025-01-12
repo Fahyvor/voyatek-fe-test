@@ -22,10 +22,12 @@ interface Airplane {
 
 interface FlightsState {
   airplanes: Airplane[];
+  selectedFlights: Airplane[];
 }
 
 const initialState: FlightsState = {
   airplanes: [],
+  selectedFlights: [],
 };
 
 const flightsSlice = createSlice({
@@ -41,8 +43,14 @@ const flightsSlice = createSlice({
     removeFlight: (state, action: PayloadAction<number>) => {
       state.airplanes = state.airplanes.filter(flight => flight.id !== action.payload);
     },
+    setSelectedFlights: (state, action: PayloadAction<Airplane[]>) => {
+      state.selectedFlights = action.payload;
+    },
+    removeSelectedFlight: (state, action: PayloadAction<number>) => {
+      state.selectedFlights = state.selectedFlights.filter(flight => flight.id !== action.payload);
+    },
   },
 });
 
-export const { setFlights, addFlight, removeFlight } = flightsSlice.actions;
+export const { setFlights, addFlight, removeFlight, setSelectedFlights, removeSelectedFlight } = flightsSlice.actions;
 export default flightsSlice.reducer;

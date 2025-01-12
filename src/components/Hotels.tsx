@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';  
 import { useDispatch, useSelector } from 'react-redux';
-import { setHotels, setSelectedHotel } from "../redux/hotelSlice";
+import { setHotels, setSelectedHotels } from "../redux/hotelSlice";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface HotelProps {
   image: string;
@@ -22,38 +24,35 @@ interface Props {
 
 const Hotels = (props: Props) => {
   const dispatch = useDispatch();
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-// Get hotels and selected hotel from Redux store
-const hotels = useSelector((state: { hotel: { hotels: HotelProps[] } }) => state.hotel.hotels);
-const selectedHotel = useSelector((state: { hotel: { selectedHotel: HotelProps | null } }) => state.hotel.selectedHotel);
+  // Get selectedHotels from Redux store
+  const selectedHotels = useSelector(
+    (state: { hotel: { selectedHotels: HotelProps[] } }) => state.hotel.selectedHotels
+  );
 
-// Dispatch action to set hotels in Redux store when component mounts
-useEffect(() => {
-  // Log hotels data from Redux store before any dispatch
-  console.log('Hotels from Redux:', hotels);
-
-  if (hotels.length === 0) {
-    dispatch(setHotels(props.hotelArray));
-    console.log('Dispatching setHotels action with data:', props.hotelArray);
-    // Assuming props.hotelArray contains the hotel data
-  }
-}, [dispatch, hotels.length, props.hotelArray]);
+  // Dispatch action to set hotels in Redux store if selectedHotels are empty
+  useEffect(() => {
+    if (selectedHotels.length === 0) {
+      dispatch(setSelectedHotels([])); // You can modify this to set default selected hotels
+    }
+  }, [dispatch, selectedHotels.length]);
 
   // Handle hotel selection
   const handleHotelSelect = (hotel: HotelProps) => {
-    dispatch(setSelectedHotel(hotel)); // Store selected hotel in Redux
-    navigate(`/hotel-details/${hotel.name}`); // Navigate to the hotel details page (if applicable)
+    dispatch(setSelectedHotels([hotel])) 
   };
 
-  const removeHotel = (name: string) => {
-    dispatch({
-      type: 'hotel/removeHotel',
-      payload: name,
-    });
+  const removeHotel = (hotel_id: string) => {
+    dispatch({ type: "hotel/removeHotel", payload: hotel_id });
+    toast("Hotel removed!")
   };
+
   return (
     <div className="bg-[#344054] p-4 mx-6">
+       <div className='toastify-message'>
+          <ToastContainer />
+        </div>
       <div className="flex justify-between">
         <div className="flex gap-3 items-center">
           <img src="/Warehouse.svg" alt="" />
@@ -66,7 +65,7 @@ useEffect(() => {
       </div>
 
       {/* Conditional rendering for hotels */}
-      {hotels.length === 0 ? (
+      {selectedHotels.length === 0 ? (
         <div className="flex flex-col gap-2 py-20 justify-center items-center bg-white p-4 rounded-lg mt-4">
           <img src='/hotel(1).svg' alt='' className='' />
           <p className="text-sm font-semibold text-gray-600">No Request yet</p>
@@ -77,40 +76,62 @@ useEffect(() => {
         </div>
       ) : (
         <div className="">
-          {hotels.map((hotel, index) => (
+          {selectedHotels.map((hotel, index) => (
             <div key={index} className="flex gap-3 items-center bg-white pl-4 w-full my-4">
               <div className="flex bg-white rounded-lg gap-3 w-full items-center">
+                {/* Hotel Image */}
                 <div className="hotel_image flex items-center lg:w-1/6">
                   <img src={hotel.image} alt="" className="object-cover w-full h-full" />
                 </div>
 
+                {/* Hotel Details */}
                 <div className="hotel_details py-3 w-5/6 flex flex-col gap-1">
                   <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
                     <div className="flex flex-col gap-2 w-full">
-                      <p className="font-semibold text-2xl">{hotel.name}</p>
-                      <p className="text-md font-medium w-5/6">{hotel.address}</p>
-
-                      <hr className="w-full border border-gray-200 flex lg:hidden md:hidden" />
-
-                      <div className="hidden lg:flex md:flex gap-5 items-center">
-                        <div className="flex gap-2 items-center">
-                          <img src="/MapPin.svg" alt="" />
-                          <p className="text-[#0D6EFD] font-medium">Show in map</p>
+                      <div className="flex justify-between">
+                        <div className="">
+                          <p className="font-semibold text-2xl">{hotel.name}</p>
+                          <p className="text-md font-medium w-5/6">{hotel.address}</p>
                         </div>
-                        <div className="flex gap-2 items-center">
-                          <img src="/Star.svg" alt="" />
-                          <p>{hotel.rating}</p>
-                        </div>
-                        <div className="flex gap-2 items-center">
-                          <img src="/Bed.svg" alt="" />
-                          <p>{hotel.size}</p>
+                        <div className="flex flex-col gap-2 lg:items-end md:items-end items-start">
+                          <p className="text-2xl font-semibold"><span className="line-through">N</span>{hotel.price}</p>
+                          <p className="font-medium text-nowrap">Total Price: {hotel.totalPrice}</p>
+                          <p className="font-medium text-nowrap">1 room x 10 nights incl. taxes</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="flex flex-col gap-2 lg:items-end md:items-end items-start">
-                      <p className="text-2xl font-semibold"><span className="line-through">N</span>{hotel.price}</p>
-                      <p className="font-medium">Total Price: NGN {hotel.totalPrice}</p>
-                      <p className="font-medium">1 room x 10 nights incl. taxes</p>
+
+                      <hr className="w-full border border-gray-200 hidden lg:flex md:flex" />
+
+                      {/* Facilities */}
+                      <div className='flex justify-between'>
+                        <div className="hidden lg:flex md:flex mx-2 gap-5 items-center">
+                          <div className="flex gap-2 items-center">
+                            <img src="/MapPin.svg" alt="" />
+                            <p className="text-[#0D6EFD] font-medium">Show in map</p>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <img src="/Star.svg" alt="" />
+                            <p>{hotel.rating}</p>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <img src="/Bed.svg" alt="" />
+                            <p>{hotel.size}</p>
+                          </div>
+                        </div>
+                        <div className='flex items-center'>
+                          <div className="check_in flex ietms-center gap-1">
+                            <img src="/CalendarBlack.svg" alt='' />
+                            <p>Check In:</p>
+                            <p>{hotel.checkIn}</p>
+                          </div>
+
+                          <div className="check_in flex ietms-center gap-1">
+                            <img src="/CalendarBlack.svg" alt='' />
+                            <p>Check Out:</p>
+                            <p>{hotel.checkOut}</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 

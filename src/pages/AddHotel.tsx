@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { setSelectedHotel } from '../redux/hotelSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addSelectedHotel } from '../redux/hotelSlice';
 import hotelsData from '../components/API Responses/Hotels.json';
+import { RootState } from '../redux/store';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface Hotel {
   hotel_id: number;
@@ -17,10 +20,13 @@ interface Hotel {
         value: number;
       };
     };
+    wishlistName: string;
+    checkinDate: string;
+    checkoutDate: string;
   };
 }
 
-const HotelList: React.FC = () => {
+const AddHotel: React.FC = () => {
   const [hotels, setHotels] = useState<Hotel[]>([]);
   const [filteredHotels, setFilteredHotels] = useState<Hotel[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -28,10 +34,12 @@ const HotelList: React.FC = () => {
   const [error, setError] = useState<string>('');
   const dispatch = useDispatch();
 
+  const selectedHotels = useSelector((state: RootState) => state.hotel.selectedHotels);
+
   useEffect(() => {
     try {
-      setHotels(hotelsData.data.hotels); // Assuming your JSON has a `data.hotels` structure
-      setFilteredHotels(hotelsData.data.hotels); // Initialize the filtered list
+      setHotels(hotelsData.data.hotels);
+      setFilteredHotels(hotelsData.data.hotels);
     } catch (err) {
       setError('Failed to load hotels data');
     } finally {
@@ -61,16 +69,18 @@ const HotelList: React.FC = () => {
       hotel_id: hotel.hotel_id,
       image: hotel.property.photoUrls[0],
       name: hotel.property.name,
-      address: "Hotel Address",
+      address: hotel.property.wishlistName,
       rating: `${hotel.property.reviewScore} (${hotel.property.reviewScoreWord})`,
-      size: "Hotel Size",
-      facilities: "Hotel Facilities",
+      size: "King size room",
+      facilities: "Pool, Bar",
       price: `₹${hotel.property.priceBreakdown.grossPrice.value}`,
-      checkIn: "Check-in Time",
-      checkOut: "Check-out Time",
+      checkIn: hotel.property.checkinDate,
+      checkOut: hotel.property.checkoutDate,
       totalPrice: `₹${hotel.property.priceBreakdown.grossPrice.value}`,
     };
-    dispatch(setSelectedHotel(hotelToDispatch));
+    console.log("Hotel to dispatch", hotelToDispatch);
+    dispatch(addSelectedHotel(hotelToDispatch));
+    toast("Hotel selected!");
   };
 
   if (loading) return <p>Loading hotels...</p>;
@@ -78,6 +88,9 @@ const HotelList: React.FC = () => {
 
   return (
     <div className="w-full px-10 mx-auto p-6">
+       <div className='toastify-message'>
+          <ToastContainer />
+        </div>
       <h1 className="text-3xl font-bold mb-6">Hotels in Mumbai</h1>
 
       {/* Search Input */}
@@ -120,4 +133,4 @@ const HotelList: React.FC = () => {
   );
 };
 
-export default HotelList;
+export default AddHotel;

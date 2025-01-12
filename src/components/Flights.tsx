@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setFlights } from '../redux/flightsSlice';
 import { useNavigate } from 'react-router-dom';
+import { setFlights } from '../redux/flightsSlice';
 
 interface AirplaneProps {
   id: number;
@@ -31,7 +31,7 @@ const Flights = (props: Props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const airplanes = useSelector((state: { flights: { airplanes: AirplaneProps[] } }) => state.flights.airplanes);
+  const airplanes = useSelector((state: { flights: { airplanes: AirplaneProps[] } }) => state.flights.selectedFlights);
 
   return (
     <div className="bg-gray-50 my-7 p-6 mx-6 rounded-lg shadow-md">

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-// Define the types for the hotel data.
+// Define the types for the hotel data
 interface HotelProps {
   image: string;
   name: string;
@@ -16,13 +16,13 @@ interface HotelProps {
 
 interface HotelState {
   hotels: HotelProps[];
-  selectedHotel: HotelProps | null; // Field to store the selected hotel
+  selectedHotels: HotelProps[]; // Update this to an array
 }
 
 // Initial state
 const initialState: HotelState = {
   hotels: [],
-  selectedHotel: null, // Initialize as null
+  selectedHotels: [], // Initialize as an empty array
 };
 
 // Create the hotel slice
@@ -42,19 +42,42 @@ const hotelSlice = createSlice({
     removeHotel: (state, action: PayloadAction<string>) => {
       state.hotels = state.hotels.filter(hotel => hotel.name !== action.payload);
     },
-    // Set the selected hotel
-    setSelectedHotel: (state, action: PayloadAction<HotelProps>) => {
-      state.selectedHotel = action.payload;
+    // Set the selected hotels (overwrite the array)
+    setSelectedHotels: (state, action: PayloadAction<HotelProps[]>) => {
+      state.selectedHotels = action.payload;
     },
-    // Clear the selected hotel
-    clearSelectedHotel: (state) => {
-      state.selectedHotel = null;
+    // Add a single hotel to selectedHotels
+    addSelectedHotel: (state, action: PayloadAction<HotelProps>) => {
+      const isAlreadySelected = state.selectedHotels.some(
+        hotel => hotel.name === action.payload.name
+      );
+      if (!isAlreadySelected) {
+        state.selectedHotels.push(action.payload);
+      }
+    },
+    // Remove a hotel from selectedHotels by name
+    removeSelectedHotel: (state, action: PayloadAction<string>) => {
+      state.selectedHotels = state.selectedHotels.filter(
+        hotel => hotel.name !== action.payload
+      );
+    },
+    // Clear the selectedHotels array
+    clearSelectedHotels: (state) => {
+      state.selectedHotels = [];
     },
   },
 });
 
 // Export actions for use in components
-export const { setHotels, addHotel, removeHotel, setSelectedHotel, clearSelectedHotel } = hotelSlice.actions;
+export const {
+  setHotels,
+  addHotel,
+  removeHotel,
+  setSelectedHotels,
+  addSelectedHotel,
+  removeSelectedHotel,
+  clearSelectedHotels,
+} = hotelSlice.actions;
 
 // Export the reducer to configure the store
 export default hotelSlice.reducer;
