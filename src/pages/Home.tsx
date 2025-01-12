@@ -11,9 +11,11 @@ import FlightsLocation from "../components/FlightsLocation";
 import { activitiesArray } from "../components/API Responses/Activities";
 import { airplaneArray } from "../components/API Responses/Flight";
 import { hotelArray } from "../components/API Responses/Hotel";
+import { useNavigate } from "react-router-dom";
 
 const Home:React.FC = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
   // useEffect(() => {
   //   const FetchFlightDetails = async () => {
   //     try {
@@ -78,13 +80,13 @@ const Home:React.FC = () => {
                 <p className="font-bold text-lg">Hotels</p>
                 <p className="text-xs">Build, personalize, and optimize your itineraries with our trip planner.</p>
 
-                <button className="bg-[#0D6EFD] py-2 rounded-md w-full mt-10 text-white cursor-pointer">Add Hotels</button>
+                <button className="bg-[#0D6EFD] py-2 rounded-md w-full mt-10 text-white cursor-pointer" onClick={() => navigate('/add-hotel')}>Add Hotels</button>
               </div>
               <div className="flights_container bg-[#0D6EFD] p-3 rounded-lg text-white">
                 <p className="font-bold text-lg">Flights</p>
                 <p className="text-xs">Build, personalize, and optimize your itineraries with our trip planner.</p>
 
-                <button className="bg-white text-[#0D6EFD] py-2 rounded-md w-full mt-10 cursor-pointer">Add Flights</button>
+                <button className="bg-white text-[#0D6EFD] py-2 rounded-md w-full mt-10 cursor-pointer" onClick={() => navigate('/add-flight')}>Add Flights</button>
               </div>
             </div>
           </div>

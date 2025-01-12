@@ -77,76 +77,78 @@ const Hotels = (props: Props) => {
       ) : (
         <div className="">
           {selectedHotels.map((hotel, index) => (
-            <div key={index} className="flex gap-3 items-center bg-white pl-4 w-full my-4">
-              <div className="flex bg-white rounded-lg gap-3 w-full items-center">
+            <div key={index} className="flex gap-3 items-center bg-white lg:pl-4 md:pl-4 pl-0 w-full my-4">
+              <div className="flex bg-white rounded-lg gap-3 w-full items-center p-3">
+                <div className="flex lg:flex-row md:flex-row flex-col gap-2">
+                  <div className="hotel_image flex items-center lg:w-1/6">
+                    <img src={hotel.image} alt="" className="object-cover w-full h-full" />
+                  </div>
+
+                  {/* Hotel Details */}
+                  <div className="hotel_details py-3 w-5/6 flex flex-col gap-1">
+                    <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
+                      <div className="flex flex-col gap-2 w-full">
+                        <div className="flex justify-between lg:flex-row md:flex-row flex-col">
+                          <div className="">
+                            <p className="font-semibold text-2xl">{hotel.name}</p>
+                            <p className="text-md font-medium w-5/6">{hotel.address}</p>
+                          </div>
+                          <div className="flex flex-col gap-2 lg:items-end md:items-end items-start">
+                            <p className="text-2xl font-semibold"><span className="line-through">N</span>{hotel.price}</p>
+                            <p className="font-medium text-nowrap">Total Price: {hotel.totalPrice}</p>
+                            <p className="font-medium text-nowrap">1 room x 10 nights incl. taxes</p>
+                          </div>
+                        </div>
+
+                        <hr className="w-full border border-gray-200 hidden lg:flex md:flex" />
+
+                        {/* Facilities */}
+                        <div className='flex justify-between lg:flex-row md:flex-row flex-col'>
+                          <div className="hidden lg:flex md:flex mx-2 gap-5 items-center">
+                            <div className="flex gap-2 items-center">
+                              <img src="/MapPin.svg" alt="" />
+                              <p className="text-[#0D6EFD] font-medium">Show in map</p>
+                            </div>
+                            <div className="flex gap-2 items-center">
+                              <img src="/Star.svg" alt="" />
+                              <p>{hotel.rating}</p>
+                            </div>
+                            <div className="flex gap-2 items-center">
+                              <img src="/Bed.svg" alt="" />
+                              <p>{hotel.size}</p>
+                            </div>
+                          </div>
+                          <div className='flex lg:items-center md:items-center items-start gap-5 lg:flex-row md:flex-row flex-col'>
+                            <div className="check_in flex ietms-center gap-1">
+                              <img src="/CalendarBlack.svg" alt='' />
+                              <p>Check In:</p>
+                              <p>{hotel.checkIn}</p>
+                            </div>
+
+                            <div className="check_in flex ietms-center gap-1">
+                              <img src="/CalendarBlack.svg" alt='' />
+                              <p>Check Out:</p>
+                              <p>{hotel.checkOut}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr className="w-full border border-gray-200" />
+
+                    <div className="flex justify-between py-3 items-center text-[#0D6EFD]">
+                      <div className="flex gap-5 items-center">
+                        <p>Hotel details</p>
+                        <p>Price details</p>
+                      </div>
+                      <div className="" onClick={() => handleHotelSelect(hotel)}>Edit details</div>
+                    </div>
+                  </div>
+                </div>
                 {/* Hotel Image */}
-                <div className="hotel_image flex items-center lg:w-1/6">
-                  <img src={hotel.image} alt="" className="object-cover w-full h-full" />
-                </div>
 
-                {/* Hotel Details */}
-                <div className="hotel_details py-3 w-5/6 flex flex-col gap-1">
-                  <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
-                    <div className="flex flex-col gap-2 w-full">
-                      <div className="flex justify-between">
-                        <div className="">
-                          <p className="font-semibold text-2xl">{hotel.name}</p>
-                          <p className="text-md font-medium w-5/6">{hotel.address}</p>
-                        </div>
-                        <div className="flex flex-col gap-2 lg:items-end md:items-end items-start">
-                          <p className="text-2xl font-semibold"><span className="line-through">N</span>{hotel.price}</p>
-                          <p className="font-medium text-nowrap">Total Price: {hotel.totalPrice}</p>
-                          <p className="font-medium text-nowrap">1 room x 10 nights incl. taxes</p>
-                        </div>
-                      </div>
-
-                      <hr className="w-full border border-gray-200 hidden lg:flex md:flex" />
-
-                      {/* Facilities */}
-                      <div className='flex justify-between'>
-                        <div className="hidden lg:flex md:flex mx-2 gap-5 items-center">
-                          <div className="flex gap-2 items-center">
-                            <img src="/MapPin.svg" alt="" />
-                            <p className="text-[#0D6EFD] font-medium">Show in map</p>
-                          </div>
-                          <div className="flex gap-2 items-center">
-                            <img src="/Star.svg" alt="" />
-                            <p>{hotel.rating}</p>
-                          </div>
-                          <div className="flex gap-2 items-center">
-                            <img src="/Bed.svg" alt="" />
-                            <p>{hotel.size}</p>
-                          </div>
-                        </div>
-                        <div className='flex items-center'>
-                          <div className="check_in flex ietms-center gap-1">
-                            <img src="/CalendarBlack.svg" alt='' />
-                            <p>Check In:</p>
-                            <p>{hotel.checkIn}</p>
-                          </div>
-
-                          <div className="check_in flex ietms-center gap-1">
-                            <img src="/CalendarBlack.svg" alt='' />
-                            <p>Check Out:</p>
-                            <p>{hotel.checkOut}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <hr className="w-full border border-gray-200" />
-
-                  <div className="flex justify-between py-3 items-center text-[#0D6EFD]">
-                    <div className="flex gap-5 items-center">
-                      <p>Hotel details</p>
-                      <p>Price details</p>
-                    </div>
-                    <div className="" onClick={() => handleHotelSelect(hotel)}>Edit details</div>
-                  </div>
-                </div>
-
-                <div className="delete_ticket bg-[#FBEAE9] h-full flex py-28 px-2 cursor-pointer"
+                <div className="delete_ticket bg-[#FBEAE9] h-full hidden lg:flex md:flex py-28 px-2 cursor-pointer"
                 onClick={() => removeHotel(hotel.name)}
                 >
                   <img src="/X.svg" alt="" />

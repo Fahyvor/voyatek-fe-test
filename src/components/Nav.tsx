@@ -78,7 +78,7 @@ const Nav: React.FC = () => {
                 {menuOpen ?
                 <div>
                     <div className="items-end px-8 py-4 space-y-8 flex flex-col absolute top-16 h-screen right-0 bg-white w-full">
-                        <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex items-center">
+                        <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex items-center" onClick={() => {navigate('/'), setMenuOpen(!menuOpen)}}>
                             <img src="House.svg" alt="" className="h-4 w-4" />
                             <p className="text-xs font-medium">Home</p>
                         </div>
