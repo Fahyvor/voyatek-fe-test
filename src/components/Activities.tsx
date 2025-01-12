@@ -37,12 +37,14 @@ const Activities = ({ activitiesArray }: Props) => {
               </div>
 
               <div className="activities_details py-3 w-5/6 flex flex-col gap-1">
-                <div className="flex justify-between">
+                <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
                   <div className="flex flex-col gap-2">
                     <p className="font-semibold text-2xl">{activities.name}</p>
                     <p className="text-md font-medium w-5/6">{activities.description}</p>
 
-                    <div className="flex gap-5 items-center">
+                    <hr className="w-full border border-gray-200 flex lg:hidden md:hidden" />
+
+                    <div className="hidden lg:flex md:flex gap-5 items-center">
                       <div className="flex gap-2 items-center">
                         <img src="/MapPin.svg" alt=""  className="" />
                         <p className="font-medium text-[#0D6EFD]">Directions</p>
@@ -57,15 +59,15 @@ const Activities = ({ activitiesArray }: Props) => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-2  items-end">
+                  <div className="flex flex-col gap-2  g:items-end md:items-end items-start">
                     <p className="text-2xl font-semibold"><span className="line-through">N</span>{activities.price}</p>
                     <p className="font-medium">{activities.time} on {activities.date}</p>
                   </div>
                 </div>
 
-                <hr className="w-full border border-gray-200" />
+                <hr className="w-full border border-gray-200 hidden lg:flex md:flex" />
 
-                <div className="flex justify-between">
+                <div className="hidden lg:flex md:flex justify-between">
                   <div className="flex gap-3 items-center">
                     <p>What&apos;s included: {activities.included}</p>
                     <div className="flex gap-3 items-center">

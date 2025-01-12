@@ -85,12 +85,14 @@ useEffect(() => {
                 </div>
 
                 <div className="hotel_details py-3 w-5/6 flex flex-col gap-1">
-                  <div className="flex justify-between">
-                    <div className="flex flex-col gap-2">
+                  <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
+                    <div className="flex flex-col gap-2 w-full">
                       <p className="font-semibold text-2xl">{hotel.name}</p>
                       <p className="text-md font-medium w-5/6">{hotel.address}</p>
 
-                      <div className="flex gap-5 items-center">
+                      <hr className="w-full border border-gray-200 flex lg:hidden md:hidden" />
+
+                      <div className="hidden lg:flex md:flex gap-5 items-center">
                         <div className="flex gap-2 items-center">
                           <img src="/MapPin.svg" alt="" />
                           <p className="text-[#0D6EFD] font-medium">Show in map</p>
@@ -105,7 +107,7 @@ useEffect(() => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-2 items-end">
+                    <div className="flex flex-col gap-2 lg:items-end md:items-end items-start">
                       <p className="text-2xl font-semibold"><span className="line-through">N</span>{hotel.price}</p>
                       <p className="font-medium">Total Price: NGN {hotel.totalPrice}</p>
                       <p className="font-medium">1 room x 10 nights incl. taxes</p>

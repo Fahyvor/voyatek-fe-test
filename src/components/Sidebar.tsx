@@ -16,7 +16,7 @@ const Sidebar:React.FC = () => {
         <p className="text-sm font-medium">Hotels</p>
       </div>
 
-      <div className="text-gray-600 hover:bg-blue-100 px-4 py-2 rounded-md flex gap-2 items-center cursor-pointer">
+      <div className="text-gray-600 hover:bg-blue-100 px-4 py-2 rounded-md flex gap-2 items-center cursor-pointer" onClick={() => navigate('/add-flight')}>
         <img src="/AirplaneTilt.svg" alt="" className="w-6 h-6" />
         <p className="text-sm font-medium">Flights</p>
       </div>
