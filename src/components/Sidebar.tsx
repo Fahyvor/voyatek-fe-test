@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const Sidebar:React.FC = () => {
   const navigate = useNavigate();
   return (
-    <div className=" bg-white h-screen py-6 px-4">
+    <div className=" bg-white min-h-screen fixed py-6 px-4">
       <div className="flex flex-col gap-5">
       <div className="text-gray-600 hover:bg-blue-100 px-4 py-2 rounded-md flex gap-2 items-center cursor-pointer">
         <img src="/RoadHorizon.svg" alt="" className="w-6 h-6" />

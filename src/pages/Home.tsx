@@ -42,12 +42,12 @@ const Home:React.FC = () => {
   // }, [])
   
   return (
-    <div className="p-4 flex gap-4 bg-gray-200 w-full">
-      <div className="w-[20%] sticky top-16 h-screen hidden lg:flex md:flex">
+    <div className="p-4 flex md:flex-row lg:flex-row flex-col gap-5 bg-gray-200 w-full">
+      <div className="w-full lg:w-[20%] md:w-[25%] lg:w-[20%] xl:w-[10%] 2xl:w-[5%] hidden lg:flex md:flex">
         <Sidebar />
       </div>
-      <div className="w-full bg-white">
-        <div className="w-full pt-10 pb-28 bg-no-repeat banner_section"
+      <div className="flex-1 bg-white z-10 md:w-[10%] lg:ml-[10%] 2xl:ml-[10%]" >
+        <div className="w-full pt-10 pb-28 banner_section"
         style={{ backgroundImage: "url('/banner.svg')"}}
         >
             <div className="flex justify-between px-5">
@@ -69,7 +69,7 @@ const Home:React.FC = () => {
 
             <p className="lg:text-lg md:text-lg text-xs font-medium text-[#676E7E]">New York, United States of America <span className="text-gray-100">| </span> Solo Trip</p>
 
-            <div className="activities_hotels_flights flex lg:flex-row md:flex-row flex-col lg:gap-2 md:gap-2 gap-6 py-5">
+            <div className="activities_hotels_flights grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-2 md:gap-2 gap-6 py-5">
               <div className="activities_container text-white bg-[#000031] p-3 rounded-lg">
                 <p className="font-bold text-lg">Activities</p>
                 <p className="text-xs">Build, personalize, and optimize your itineraries with our trip planner.</p>

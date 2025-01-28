@@ -31,7 +31,7 @@ const Flights = (props: Props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const airplanes = useSelector((state: { flights: { airplanes: AirplaneProps[] } }) => state.flights.selectedFlights);
+  const { selectedFlights: airplanes } = useSelector((state: { flights: { selectedFlights: AirplaneProps[] } }) => state.flights);
 
   return (
     <div className="bg-gray-50 my-7 p-6 mx-6 rounded-lg shadow-md">
@@ -61,7 +61,7 @@ const Flights = (props: Props) => {
         </div>
       ) : (
         <div className="grid gap-6">
-          {airplanes.map((flight, index) => (
+          {airplanes.map((flight: AirplaneProps, index: number) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-md p-4 flex justify-between items-center hover:shadow-lg transition-shadow duration-200"

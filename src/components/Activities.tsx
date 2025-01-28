@@ -39,7 +39,7 @@ const Activities = ({ activitiesArray }: Props) => {
                 </div>
 
                 {/* Activities Details */}
-                <div className="activities_details py-3 w-5/6 flex flex-col gap-1">
+                <div className="activities_details w-5/6 flex flex-col gap-1">
                   <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
                     <div className="flex flex-col gap-2">
                       <p className="font-semibold text-2xl">{activities.name}</p>
@@ -74,12 +74,12 @@ const Activities = ({ activitiesArray }: Props) => {
                     <div className="flex gap-3 items-center">
                       <p>What&apos;s included: {activities.included}</p>
                       <div className="flex gap-3 items-center">
-                        <p className="font-medium text-[#0D6EFD]">See More</p>
+                        <p className="font-xs lg:font-md font-medium text-nowrap text-[#0D6EFD]">See More</p>
                       </div>
                     </div>
                     <div className="flex gap-3 items-center">
                       <div className="flex gap-3 items-center">
-                        <p className="text-white bg-[#0D6EFD] py-1 rounded-md px-6">Day {activities.day}</p>
+                        <p className="text-white bg-[#0D6EFD] text-nowrap py-1 rounded-md px-6">Day {activities.day}</p>
                         <img src="/CaretUpDown.svg" alt="" className="" />
                       </div>
                     </div>
@@ -87,7 +87,7 @@ const Activities = ({ activitiesArray }: Props) => {
 
                   <hr className="w-full border border-gray-200" />
 
-                  <div className="flex justify-between py-3 items-center text-[#0D6EFD]">
+                  <div className="flex justify-between items-center text-[#0D6EFD]">
                     <div className="flex gap-5 items-center">
                       <p>Activity details</p>
                       <p>Price details</p>

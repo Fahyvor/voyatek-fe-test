@@ -21,26 +21,26 @@ const Nav: React.FC = () => {
             </div>
             <div className="items-center space-x-6 lg:flex md:flex hidden">
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="House.svg" alt="" className="h-4 w-4" />
+                    <img src="House.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Home</p>
                 </div>
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="ChartPieSlice.svg" alt="" className="h-4 w-4" />
+                    <img src="ChartPieSlice.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Dashboard</p>
                 </div>
 
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="Wallet.svg" alt="" className="h-4 w-4" />
+                    <img src="Wallet.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Wallet</p>
                 </div>
 
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="ListChecks.svg" alt="" className="h-4 w-4" />
+                    <img src="ListChecks.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Plan a trip</p>
                 </div>
 
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="HandCoins.svg" alt="" className="h-4 w-4" />
+                    <img src="HandCoins.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Commission for life</p>
                 </div>
 
@@ -50,23 +50,23 @@ const Nav: React.FC = () => {
                 </button>
 
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="Bell.svg" alt="" className="h-4 w-4" />
+                    <img src="Bell.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Notification</p>
                 </div>
 
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="Basket.svg" alt="" className="h-4 w-4" />
+                    <img src="Basket.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Carts</p>
                 </div>
 
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex flex-col items-center">
-                    <img src="PlusSquare.svg" alt="" className="h-4 w-4" />
+                    <img src="PlusSquare.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                     <p className="text-xs font-medium">Create</p>
                 </div>
 
                 <div className="text-gray-600 hover:text-gray-800 cursor-pointer gap-2 flex items-center">
-                    <img src="user.svg" alt="" className="h-4 w-4" />
-                    <img src="CaretDown.svg" alt="" className="h-4 w-4" />
+                    <img src="user.svg" alt="" className="h-[52px] w-[52px]" />
+                    <img src="CaretDown.svg" alt="" className="h-4 w-4 hover:fill-gray-800" />
                 </div>
 
             </div>

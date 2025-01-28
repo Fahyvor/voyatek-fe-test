@@ -78,14 +78,14 @@ const Hotels = (props: Props) => {
         <div className="">
           {selectedHotels.map((hotel, index) => (
             <div key={index} className="flex gap-3 items-center bg-white lg:pl-4 md:pl-4 pl-0 w-full my-4">
-              <div className="flex bg-white rounded-lg gap-3 w-full items-center p-3">
+              <div className="flex bg-white rounded-lg gap-3 w-full items-center lg:px-0 xl:px-0 md:px-0 px-3">
                 <div className="flex lg:flex-row md:flex-row flex-col gap-2">
                   <div className="hotel_image flex items-center lg:w-1/6">
                     <img src={hotel.image} alt="" className="object-cover w-full h-full" />
                   </div>
 
                   {/* Hotel Details */}
-                  <div className="hotel_details py-3 w-5/6 flex flex-col gap-1">
+                  <div className="hotel_details w-5/6 flex flex-col gap-1">
                     <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
                       <div className="flex flex-col gap-2 w-full">
                         <div className="flex justify-between lg:flex-row md:flex-row flex-col">
