@@ -23,14 +23,14 @@ const Activities = ({ activitiesArray }: Props) => {
           <img src="/RoadHorizon(1).svg" alt="" className="" />
           <p className="font-semibold text-white text-sm">Activities</p>
         </div>
-        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#0D6EFD] font-semibold hover:cursor-pointer">
+        <div className="text-xs hover:bg-gray-300 bg-white rounded-lg py-3 px-6 text-[#0D6EFD] font-semibold hover:cursor-pointer">
           <p>Add Activities</p>
         </div>
       </div>
 
       <div className="">
         {activitiesArray.map((activities, index) => (
-          <div key={index} className="flex gap-3 items-center hover:border-4 border-[#344054] bg-white lg:pl-4 md:px-4 pl-0 h-full w-full my-4">
+          <div key={index} className="flex gap-3 items-center hover:bg-gray-200 outline-[#344054] bg-white lg:pl-4 md:px-4 lg:px-0 pl-0 h-full w-full my-4">
             <div className="flex rounded-lg gap-3 w-full items-center">
               <div className="flex flex-1 lg:flex-row flex-col gap-4">
                 {/* Activities Image */}
@@ -79,7 +79,7 @@ const Activities = ({ activitiesArray }: Props) => {
                     </div>
                     <div className="flex gap-3 items-center">
                       <div className="flex gap-3 items-center">
-                        <p className="text-white bg-[#0D6EFD] text-nowrap py-1 rounded-md px-6">Day {activities.day}</p>
+                        <p className="text-white bg-[#0D6EFD] text-nowrap py-1 rounded-md text-xs px-6">Day {activities.day}</p>
                         <img src="/CaretUpDown.svg" alt="" className="" />
                       </div>
                     </div>

@@ -5,6 +5,7 @@ import hotelsData from '../components/API Responses/Hotels.json';
 import { RootState } from '../redux/store';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 interface Hotel {
   hotel_id: number;
@@ -33,6 +34,7 @@ const AddHotel: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const selectedHotels = useSelector((state: RootState) => state.hotel.selectedHotels);
 
@@ -91,7 +93,10 @@ const AddHotel: React.FC = () => {
        <div className='toastify-message'>
           <ToastContainer />
         </div>
-      <h1 className="text-3xl font-bold mb-6">Hotels in Mumbai</h1>
+        <div className="flex justify-between">
+          <h1 className="text-3xl font-bold mb-6">Hotels in Mumbai</h1>
+          <p onClick={() => navigate('/')} className='bg-[#0D6EFD] flex items-center text-white text-xs font-medium hover:cursor-pointer rounded-lg py-1 px-6 hover:bg-blue-700'>Return Home</p>
+        </div>
 
       {/* Search Input */}
       <div className="mb-6">

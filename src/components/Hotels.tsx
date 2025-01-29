@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';  
 import { useDispatch, useSelector } from 'react-redux';
-import { setHotels, setSelectedHotels } from "../redux/hotelSlice";
+import { removeHotel, removeSelectedHotel, setSelectedHotels } from "../redux/hotelSlice";
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,6 +16,26 @@ interface HotelProps {
   checkIn: string;
   checkOut: string;
   totalPrice: string;
+}
+
+interface Hotel {
+  hotel_id: number;
+  accessibilityLabel: string;
+  property: {
+    name: string;
+    reviewScore: number;
+    reviewScoreWord: string;
+    photoUrls: string[];
+    priceBreakdown: {
+      grossPrice: {
+        currency: string;
+        value: number;
+      };
+    };
+    wishlistName: string;
+    checkinDate: string;
+    checkoutDate: string;
+  };
 }
 
 interface Props {
@@ -43,10 +63,12 @@ const Hotels = (props: Props) => {
     dispatch(setSelectedHotels([hotel])) 
   };
 
-  const removeHotel = (hotel_id: string) => {
-    dispatch({ type: "hotel/removeHotel", payload: hotel_id });
-    toast("Hotel removed!")
-  };
+  const handleHotelClick = (hotel: HotelProps) => {
+        const hotelToRemove = hotel.name;
+        console.log("Hotel to remove", hotelToRemove);
+        dispatch(removeSelectedHotel(hotelToRemove));
+        toast("Hotel removed!");
+      };
 
   return (
     <div className="bg-[#344054] p-4 mx-6">
@@ -58,7 +80,7 @@ const Hotels = (props: Props) => {
           <img src="/Warehouse.svg" alt="" />
           <p className="font-semibold text-white text-sm">Hotels</p>
         </div>
-        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold hover:cursor-pointer"
+        <div className="text-xs hover:bg-gray-300 bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold hover:cursor-pointer"
         onClick={() => navigate('/add-hotel')}>
           <p>Add Hotels</p>
         </div>
@@ -70,14 +92,14 @@ const Hotels = (props: Props) => {
           <img src='/hotel(1).svg' alt='' className='' />
           <p className="text-sm font-semibold text-gray-600">No Request yet</p>
           <button
-            className="bg-[#0D6EFD] text-white px-6 py-3 rounded-md text-sm font-medium"
+            className="bg-[#0D6EFD] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-blue-800"
             onClick={() => navigate('/add-hotel')}
           >Add Hotels</button>
         </div>
       ) : (
         <div className="w-full">
           {selectedHotels.map((hotel, index) => (
-            <div key={index} className="flex gap-3 items-center hover:border-4 hover:border-[#0D6EFD] hover:shadow-3xl bg-white lg:pl-4 md:pl-4 pl-0 h-full w-full my-4">
+            <div key={index} className="flex gap-3 items-center hover:bg-gray-100 hover:shadow-3xl bg-white lg:pl-4 md:pl-4 pl-0 h-full w-full my-4">
               <div className="flex rounded-lg gap-3 w-full items-center lg:px-0 xl:px-0 md:px-0 px-3 h-full">
                 <div className="flex flex-1 lg:flex-row md:flex-row flex-col gap-2 h-full">
                   <div className="hotel_image flex items-center lg:w-1/6 h-full">
@@ -149,7 +171,7 @@ const Hotels = (props: Props) => {
                 {/* Hotel Image */}
 
                 <div className="delete_ticket bg-[#FBEAE9] min-h-full hidden lg:flex md:flex py-[10%] px-2 hover:cursor-pointer"
-                onClick={() => removeHotel(hotel.name)}
+                onClick={() => handleHotelClick(hotel)}
                 >
                   <img src="/X.svg" alt="" />
                 </div>

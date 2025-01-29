@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setFlights } from '../redux/flightsSlice';
+import { setFlights, removeFlight, setSelectedFlights, removeSelectedFlight } from '../redux/flightsSlice';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,6 +23,25 @@ interface AirplaneProps {
   meal: string;
   usb: string;
   price: string;
+  selected: boolean;
+}
+
+interface FlightSegment {
+  departureAirport: {
+    name: string;
+    cityName: string;
+    countryName: string;
+  };
+  arrivalAirport: {
+    name: string;
+    cityName: string;
+    countryName: string;
+  };
+  departureTime: string;
+  arrivalTime: string;
+  flightNumber: string;
+  airline: string;
+  selected: boolean; // Add selected property to each flight
 }
 
 interface Props {
@@ -35,19 +54,35 @@ const Flights = (props: Props) => {
 
   const { selectedFlights: airplanes } = useSelector((state: { flights: { selectedFlights: AirplaneProps[] } }) => state.flights);
 
-  const removeFlight = (hotel_id: number) => {
+  const handleRemoveFlightAction = (hotel_id: number) => {
     dispatch({ type: "flights/removeFlight", payload: hotel_id });
     toast("Flight removed!");
   };
 
+  //Here is the selectFlight, write the function to remove the flight
+  const handleRemoveFlight = (index: number) => {
+    const newFlights = airplanes.map((f, i) =>
+      i === index ? { ...f, selected: !f.selected } : f
+    );
+
+    setFlights(newFlights);
+      const selectedFlights = newFlights.filter((f) => f.selected);
+      dispatch(setSelectedFlights(selectedFlights)); // Dispatch selected flights action
+      if (!newFlights[index].selected) {
+        handleRemoveFlightAction(index); // Dispatch remove selected flight action
+      }
+    dispatch(setSelectedFlights(newFlights.filter((f) => f.selected))); // Dispatch selected flights action
+  };
+  
+
   return (
-    <div className="bg-gray-100 p-3 mt-5">
+    <div className="bg-gray-100 px-6 p-3 mt-5">
       <div className="flex gap-3 items-center justify-between">
         <div className="flex gap-3 items-center">
           <img src="/AirplaneInFlight.svg" alt="" className="" />
           <p className="text-lg font-bold">Flights</p>
         </div>
-        <div className="bg-white text-[#0D6EFD] px-5 py-3 rounded-lg text-md font-medium hover:cursor-pointer"
+        <div className="bg-white text-[#0D6EFD] px-5 py-3 rounded-lg text-xs font-medium hover:bg-gray-300 hover:cursor-pointer"
             onClick={() => navigate('/add-flight')}
           >
           <p>Add Flights</p>
@@ -68,7 +103,7 @@ const Flights = (props: Props) => {
       ) : (
       <div className="mt-4">
         {airplanes.map((airplane, index) => (
-          <div key={index} className="flex gap-2 lg:py-0 md:py-0 hover-hover:cursor-pointer py-4 items-center h-full hover:shadow-3xl hover:border-4 border-[#344054] bg-white pl-4 w-full my-4">
+          <div key={index} className="flex gap-2 lg:py-0 md:py-0 hover-hover:cursor-pointer py-4 items-center h-full hover:shadow-3xl hover:shadow-xl bg-white pl-4 w-full my-4">
             <div className="w-full">
               <div className="w-full flex flex-1 lg:flex-row md:flex-row flex-col items-start md:items-center lg:items-center gap-4 ticket_upper">
                 <div className="flex gap-3 airline_logo items-center lg:w-1/4">
@@ -145,7 +180,7 @@ const Flights = (props: Props) => {
               </div>
             </div>
             <div className="delete_ticket bg-[#FBEAE9] h-full flex 2xl:flex xl:flex lg:flex md:flex hidden py-[10%] px-2 hover:cursor-pointer"
-              onClick={() => removeFlight(index)}
+              onClick={() => handleRemoveFlight(index)}
             >
               <img src="/X.svg" alt="" />
             </div>
