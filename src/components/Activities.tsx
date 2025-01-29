@@ -23,23 +23,23 @@ const Activities = ({ activitiesArray }: Props) => {
           <img src="/RoadHorizon(1).svg" alt="" className="" />
           <p className="font-semibold text-white text-sm">Activities</p>
         </div>
-        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#0D6EFD] font-semibold cursor-pointer">
+        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#0D6EFD] font-semibold hover:cursor-pointer">
           <p>Add Activities</p>
         </div>
       </div>
 
       <div className="">
         {activitiesArray.map((activities, index) => (
-          <div key={index} className="flex gap-3 items-center bg-white lg:pl-4 md:pl-4 pl-0 w-full my-4">
-            <div className="flex bg-white rounded-lg gap-3 w-full items-center">
-              <div className="flex lg:flex-row md:flex-row flex-col gap-4 p-4">
+          <div key={index} className="flex gap-3 items-center hover:border-4 border-[#344054] bg-white lg:pl-4 md:px-4 pl-0 h-full w-full my-4">
+            <div className="flex rounded-lg gap-3 w-full items-center">
+              <div className="flex flex-1 lg:flex-row flex-col gap-4">
                 {/* Activities Image */}
-                <div className="activities_image flex items-center lg:w-1/6">
+                <div className="activities_image flex items-center lg:w-1/6 my-4">
                   <img src={activities.image} alt="" className="object-cover w-full h-full"/>
                 </div>
 
                 {/* Activities Details */}
-                <div className="activities_details w-5/6 flex flex-col gap-1">
+                <div className="activities_details w-5/6 flex flex-col gap-1 my-3">
                   <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
                     <div className="flex flex-col gap-2">
                       <p className="font-semibold text-2xl">{activities.name}</p>
@@ -74,7 +74,7 @@ const Activities = ({ activitiesArray }: Props) => {
                     <div className="flex gap-3 items-center">
                       <p>What&apos;s included: {activities.included}</p>
                       <div className="flex gap-3 items-center">
-                        <p className="font-xs lg:font-md font-medium text-nowrap text-[#0D6EFD]">See More</p>
+                        <p className="font-xs lg:font-md font-medium text-nowrap text-[#0D6EFD] hover:cursor-pointer">See More</p>
                       </div>
                     </div>
                     <div className="flex gap-3 items-center">
@@ -87,18 +87,18 @@ const Activities = ({ activitiesArray }: Props) => {
 
                   <hr className="w-full border border-gray-200" />
 
-                  <div className="flex justify-between items-center text-[#0D6EFD]">
+                  <div className="flex justify-between items-center text-[#0D6EFD] hover:cursor-pointer">
                     <div className="flex gap-5 items-center">
-                      <p>Activity details</p>
-                      <p>Price details</p>
+                      <p className="hover:cursor-pointer">Activity details</p>
+                      <p className="hover:cursor-pointer">Price details</p>
                     </div>
-                    <div className="">Edit details</div>
+                    <div className="hover:cursor-pointer">Edit details</div>
                   </div>
                 </div>
               </div>
 
               {/* Cancel Button */}
-              <div className="delete_ticket bg-[#FBEAE9] h-full hidden lg:flex md:flex py-28 px-2 cursor-pointer">
+              <div className="delete_ticket bg-[#FBEAE9] h-full flex-col hidden lg:flex py-[10%] px-2 hover:cursor-pointer">
                 <img src="/X.svg" alt="" />
               </div>
             </div>

@@ -109,7 +109,7 @@ const AddHotel: React.FC = () => {
         {filteredHotels.map((hotel) => (
           <div
             key={hotel.hotel_id}
-            className="border rounded-lg overflow-hidden border-gray-300 cursor-pointer"
+            className="border rounded-lg overflow-hidden border-gray-300 hover:cursor-pointer"
             onClick={() => handleHotelClick(hotel)}
           >
             <img

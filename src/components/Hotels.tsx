@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';  
 import { useDispatch, useSelector } from 'react-redux';
 import { setHotels, setSelectedHotels } from "../redux/hotelSlice";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 interface HotelProps {
   image: string;
@@ -58,7 +58,7 @@ const Hotels = (props: Props) => {
           <img src="/Warehouse.svg" alt="" />
           <p className="font-semibold text-white text-sm">Hotels</p>
         </div>
-        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold cursor-pointer"
+        <div className="text-sm bg-white rounded-lg py-3 px-6 text-[#344054] font-semibold hover:cursor-pointer"
         onClick={() => navigate('/add-hotel')}>
           <p>Add Hotels</p>
         </div>
@@ -75,19 +75,19 @@ const Hotels = (props: Props) => {
           >Add Hotels</button>
         </div>
       ) : (
-        <div className="">
+        <div className="w-full">
           {selectedHotels.map((hotel, index) => (
-            <div key={index} className="flex gap-3 items-center bg-white lg:pl-4 md:pl-4 pl-0 w-full my-4">
-              <div className="flex bg-white rounded-lg gap-3 w-full items-center lg:px-0 xl:px-0 md:px-0 px-3">
-                <div className="flex lg:flex-row md:flex-row flex-col gap-2">
-                  <div className="hotel_image flex items-center lg:w-1/6">
+            <div key={index} className="flex gap-3 items-center hover:border-4 hover:border-[#0D6EFD] hover:shadow-3xl bg-white lg:pl-4 md:pl-4 pl-0 h-full w-full my-4">
+              <div className="flex rounded-lg gap-3 w-full items-center lg:px-0 xl:px-0 md:px-0 px-3 h-full">
+                <div className="flex flex-1 lg:flex-row md:flex-row flex-col gap-2 h-full">
+                  <div className="hotel_image flex items-center lg:w-1/6 h-full">
                     <img src={hotel.image} alt="" className="object-cover w-full h-full" />
                   </div>
 
                   {/* Hotel Details */}
-                  <div className="hotel_details w-5/6 flex flex-col gap-1">
-                    <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4">
-                      <div className="flex flex-col gap-2 w-full">
+                  <div className="hotel_details w-5/6 flex flex-col gap-1 h-full">
+                    <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-4 h-full">
+                      <div className="flex flex-col gap-2 w-full h-full">
                         <div className="flex justify-between lg:flex-row md:flex-row flex-col">
                           <div className="">
                             <p className="font-semibold text-2xl">{hotel.name}</p>
@@ -137,10 +137,10 @@ const Hotels = (props: Props) => {
 
                     <hr className="w-full border border-gray-200" />
 
-                    <div className="flex justify-between py-3 items-center text-[#0D6EFD]">
+                    <div className="flex justify-between py-3 items-center text-[#0D6EFD] hover:cursor-pointer">
                       <div className="flex gap-5 items-center">
-                        <p>Hotel details</p>
-                        <p>Price details</p>
+                        <p className='hover:cursor-pointer'>Hotel details</p>
+                        <p className='hover:cursor-pointer'>Price details</p>
                       </div>
                       <div className="" onClick={() => handleHotelSelect(hotel)}>Edit details</div>
                     </div>
@@ -148,7 +148,7 @@ const Hotels = (props: Props) => {
                 </div>
                 {/* Hotel Image */}
 
-                <div className="delete_ticket bg-[#FBEAE9] h-full hidden lg:flex md:flex py-28 px-2 cursor-pointer"
+                <div className="delete_ticket bg-[#FBEAE9] min-h-full hidden lg:flex md:flex py-[10%] px-2 hover:cursor-pointer"
                 onClick={() => removeHotel(hotel.name)}
                 >
                   <img src="/X.svg" alt="" />

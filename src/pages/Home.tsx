@@ -43,14 +43,14 @@ const Home:React.FC = () => {
   
   return (
     <div className="p-4 flex md:flex-row lg:flex-row flex-col gap-5 bg-gray-200 w-full">
-      <div className="w-full lg:w-[20%] md:w-[25%] lg:w-[20%] xl:w-[10%] 2xl:w-[5%] hidden lg:flex md:flex">
+      <div className="w-full lg:w-[20%] md:w-[25%] xl:w-[10%] 2xl:w-[5%] hidden lg:flex md:flex">
         <Sidebar />
       </div>
-      <div className="flex-1 bg-white z-10 md:w-[10%] lg:ml-[10%] 2xl:ml-[10%]" >
+      <div className="flex-1 bg-white z-10 md:ml-[18%] lg:ml-[10%] 2xl:ml-[10%]" >
         <div className="w-full pt-10 pb-28 banner_section"
         style={{ backgroundImage: "url('/banner.svg')"}}
         >
-            <div className="flex justify-between px-5">
+            <div className="flex justify-between px-5 hover:cursor-pointer">
               <img src="/back.svg" alt="" className="" />
             </div>
         </div>
@@ -74,19 +74,19 @@ const Home:React.FC = () => {
                 <p className="font-bold text-lg">Activities</p>
                 <p className="text-xs">Build, personalize, and optimize your itineraries with our trip planner.</p>
 
-                <button className="bg-[#0D6EFD] py-2 rounded-md w-full text-white mt-10 cursor-pointer">Add Activites</button>
+                <button className="bg-[#0D6EFD] py-2 rounded-md w-full text-white mt-10 hover:cursor-pointer">Add Activites</button>
               </div>
               <div className="hotels_container bg-[#E7F0FF] p-3 rounded-lg">
                 <p className="font-bold text-lg">Hotels</p>
                 <p className="text-xs">Build, personalize, and optimize your itineraries with our trip planner.</p>
 
-                <button className="bg-[#0D6EFD] py-2 rounded-md w-full mt-10 text-white cursor-pointer" onClick={() => navigate('/add-hotel')}>Add Hotels</button>
+                <button className="bg-[#0D6EFD] py-2 rounded-md w-full mt-10 text-white hover:cursor-pointer" onClick={() => navigate('/add-hotel')}>Add Hotels</button>
               </div>
               <div className="flights_container bg-[#0D6EFD] p-3 rounded-lg text-white">
                 <p className="font-bold text-lg">Flights</p>
                 <p className="text-xs">Build, personalize, and optimize your itineraries with our trip planner.</p>
 
-                <button className="bg-white text-[#0D6EFD] py-2 rounded-md w-full mt-10 cursor-pointer" onClick={() => navigate('/add-flight')}>Add Flights</button>
+                <button className="bg-white text-[#0D6EFD] py-2 rounded-md w-full mt-10 hover:cursor-pointer" onClick={() => navigate('/add-flight')}>Add Flights</button>
               </div>
             </div>
           </div>

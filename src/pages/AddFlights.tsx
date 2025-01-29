@@ -18,6 +18,7 @@ interface FlightSegment {
   arrivalTime: string;
   flightNumber: string;
   airline: string;
+  selected: boolean; // Add selected property to each flight
 }
 
 const FlightList: React.FC = () => {
@@ -28,7 +29,6 @@ const FlightList: React.FC = () => {
   const [departureDate, setDepartureDate] = useState('');
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
-  const [selectedFlightIds, setSelectedFlightIds] = useState<string[]>([]); // Keep track of selected flight IDs
 
   useEffect(() => {
     try {
@@ -49,6 +49,7 @@ const FlightList: React.FC = () => {
           arrivalTime: segment?.arrivalTime || '',
           flightNumber: segment?.flightNumber || '',
           airline: segment?.airline || '',
+          selected: false, // Initialize selected property to false
         };
       });
       setFlights(mappedFlights);
@@ -79,17 +80,13 @@ const FlightList: React.FC = () => {
     setFilteredFlights(filtered);
   }, [searchTerm, departureDate, flights]);
 
-  const handleSelectFlight = (flight: FlightSegment) => {
-    const isSelected = selectedFlightIds.includes(flight.flightNumber.toString());
-    if (isSelected) {
-      // Remove the flight from the selected list
-      setSelectedFlightIds((prev) => prev.filter((id) => id !== flight.flightNumber.toString()));
-      dispatch(removeSelectedFlight(flight.flightNumber)); // Dispatch remove flight action
-    } else {
-      // Add the flight to the selected list
-      setSelectedFlightIds((prev) => [...prev, flight.flightNumber.toString()]);
-      dispatch(setSelectedFlights([flight])); // Dispatch add flight action
-    }
+  const handleSelectFlight = (index: number) => {
+    const newFlights = flights.map((f, i) =>
+      i === index ? { ...f, selected: !f.selected } : f
+    );
+
+    setFlights(newFlights);
+    dispatch(setSelectedFlights(newFlights.filter((f) => f.selected))); // Dispatch selected flights action
   };
 
   if (loading) return <p className="text-center text-lg font-medium">Loading flights...</p>;
@@ -140,10 +137,10 @@ const FlightList: React.FC = () => {
                   {new Date(flight.arrivalTime).toLocaleString()}
                 </p>
                 <button
-                  onClick={() => handleSelectFlight(flight)}
+                  onClick={() => handleSelectFlight(index)}
                   className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                 >
-                  {selectedFlightIds.includes(flight.flightNumber) ? 'Deselect Flight' : 'Select Flight'}
+                  {flight.selected ? 'Deselect Flight' : 'Select Flight'}
                 </button>
               </div>
             </div>
